@@ -1,0 +1,8 @@
+nav
+{
+    border-bottom: solid 1px black;
+}
+nav > h1
+{
+    display: inline;
+}
