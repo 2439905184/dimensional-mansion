@@ -1,139 +1,438 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>次元宅</title>
+    <title>次元宅 - ACGN导航+站长的收藏</title>
     <style>
-        #left-nav > button
-        {
-            display: block;
+        :root {
+            --primary-color: #ff6b35;
+            --secondary-color: #f7931e;
+            --background-color: #f5f5f5;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --link-color: #333333;
+            --link-hover: #ff6b35;
         }
-        #left-nav,#content
-        {
-            vertical-align: top;
-            display: inline-block;
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        #content
-        {
-            /* width: 100%; */
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
         }
-        #content > a,#content > .url-line > a
-        {
-            color: black;
+        
+        header {
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav h1 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .top-nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .top-nav a {
+            color: white;
             text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
         }
-        #content > a:hover,#content > .url-line > a:hover
-        {
-            color: orange;
+        
+        .top-nav a:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            padding: 1rem 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .quick-links a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--link-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-links a:hover {
+            background-color: #fff0e6;
+            color: var(--link-hover);
+        }
+        
+        .quick-links img {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        
+        .section {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .news-list, .download-list {
+            list-style-type: none;
+        }
+        
+        .news-list li, .download-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .news-list li:last-child, .download-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .news-list a, .download-list a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .news-list a:hover, .download-list a:hover {
+            color: var(--link-hover);
             text-decoration: underline;
         }
-        #content > .url-line > h2
-        {
-            display: inline-block;
+        
+        .url-navigation h2 {
+            text-align: center;
+            margin: 2rem 0 1rem;
+            color: var(--primary-color);
         }
-        a{
-            color: black;
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .category-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .url-list {
+            list-style-type: none;
+        }
+        
+        .url-list li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .url-list a {
+            color: var(--link-color);
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.3rem 0;
+            transition: all 0.3s ease;
         }
-        a:hover{
+        
+        .url-list a:hover {
+            color: var(--link-hover);
             text-decoration: underline;
-            color: orange;
+        }
+        
+        .url-list a::before {
+            content: "▶";
+            font-size: 0.8rem;
+            color: var(--secondary-color);
+        }
+        
+        .software-section {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .software-list {
+            list-style-type: decimal;
+            padding-left: 1.5rem;
+        }
+        
+        .software-list li {
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 0;
+        }
+        
+        .software-list a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .software-list a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+        
+        .other-links {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .link-item img {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .link-item a {
+            color: var(--link-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .link-item a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--card-bg);
+            margin-top: 2rem;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .recommend-section {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .recommend-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .recommend-links a {
+            color: var(--link-color);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background-color: #f0f0f0;
+            transition: all 0.3s ease;
+        }
+        
+        .recommend-links a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+        
+        dl {
+            margin-top: 1rem;
+        }
+        
+        dt {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+        
+        dd {
+            margin-left: 1rem;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #eee;
+            margin: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .top-nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .quick-links {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
-    <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-    <nav>
-        <h1>次元宅-acgn导航+站长的收藏</h1>
-    </nav>
-    <nav>
-        <a href="https://freelancerdh.free.nf/%E6%8A%80%E6%9C%AF%E5%AE%85%E5%B0%8F%E7%AB%99/index.html">技术宅小站</a>
-        <a href="论坛部分/index.html">次元宅官方论坛</a>
-    </nav>
-    <a target="_blank" href="https://www.bilibili.com/"><img src="img/ico/bilibili.ico">bilibili</a>
-    <a target="_blank" href="https://www.mfuns.net/"><img src="img/ico/mfuns.ico">mfuns</a>
-    <a target="_blank" href="https://bangumi.tv/"><img src="img/ico/bangumi.ico">bangumi</a>
-    <hr/>
-    <div id="news">
-        <h2>新闻</h2>
-        <ol>
-            <li><a href="https://b23.tv/bXEZHGN">【【UTAlet教程】手机上也能使用UTAU音源的软件【基本篇】-哔哩哔哩】 </a></li>
-            <li><a href="https://b23.tv/43IkSCh">【【熟肉】【COEIROINK】免费的AI音声合成软件-哔哩哔哩】 </a></li>
-            <li><a href="https://bangumi.tv/group/topic/430934">开源开放的番剧推荐计划 - 友声 Anime Episode Recommender</a></li>
-            <li><a href="https://www.bilibili.com/video/BV118egzGEvj/?spm_id_from=333.337.search-card.all.click&vd_source=2f740c00cfe14d9860c2829322f9898f">reinaManager-视觉小说管理器</a></li>
-            <li><a href="https://b23.tv/5Y55JZW">【我做了一个可以识别动漫人物的网站，支持3100部动漫+1800galgame！-哔哩哔哩】</a></li>
-        </ol>
-        <h2>资源下载</h2>
-        <ol>
-            <li><a href="https://acg.cloudns.org/">acgn导航</a></li>
-            <li><a href="https://bgm.tv/group/topic/387197">资源分享-网站分享~动画、小说、漫画、网盘BT搜索...</a></li>
-            <li><a href="https://www.shimeng.ink/">轼梦的の资源站</a></li>
-            <li><a href="https://www.acgjc.com/xy/130146.html">2.5t游戏</a></li>
-            <li><a href="https://share.gistwillan.top/">gistwillian的资源网盘</a>(游戏/软件/安卓/windows/ipa)</li>
-            <li><a href="https://www.sakuraxy.top/">玄夜の资源小站 - 获取千万好用软件游戏以及动漫推荐 - 这是玄夜的资源小站 ❤ 玄夜の资源小站 - 获取千万好用软件游戏以及动漫推荐 ❤ 这是玄夜的资源小站</a></li>
-            <li><a href="https://baiyeacg.top/">白夜の资源站</a></li>
-            <li><a href="https://yftdtddh.pages.dev/">资源汇总</a>-动画 影视 磁力 网盘 漫画 小说 音乐 游戏 资讯 社区 综合 图站 工具 软件</li>
-            <li><a href="https://www.wjshub.cn/">悟界ShareHub</a>-游戏 软件 资源 影视</li>
-        </ol>
-        
+    <header>
+        <nav>
+            <h1>次元宅 - ACGN导航+站长的收藏</h1>
+            <div class="top-nav">
+                <a href="https://freelancerdh.free.nf/%E6%8A%80%E6%9C%AF%E5%AE%85%E5%B0%8F%E7%AB%99/index.html">技术宅小站</a>
+                <a href="论坛部分/index.html">次元宅官方论坛</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="quick-links">
+        <a target="_blank" href="https://www.bilibili.com/"><img src="img/ico/bilibili.ico" alt="bilibili">bilibili</a>
+        <a target="_blank" href="https://www.mfuns.net/"><img src="img/ico/mfuns.ico" alt="mfuns">mfuns</a>
+        <a target="_blank" href="https://bangumi.tv/"><img src="img/ico/bangumi.ico" alt="bangumi">bangumi</a>
     </div>
-    <hr/>
-    <h2>网址导航</h2>
-    <div id="content">
-        <div class="url-line">
-            <h2>动画</h2>
-            <a href="https://freelancerdh.free.nf/anime/index.html">在线追番网站</a>
-            <a href="https://anich.emmmm.eu.org/app.html">Anich</a>
-            <a href="https://myani.org/">Animeko</a>
-            <a href="https://9ciyuan.com/">囧次元</a>
-            <a href="https://bgmlist.com/">每日放送（新番资讯）</a>
-            <a href="https://v.lanerc.app">Lanerc追番</a>
-            <a href="https://xmoe.app/">xmoe</a>
-            <a href="https://oneghg.com/">动漫共和国</a>
-            <a href="https://www.crunchyroll.com/">crunchyroll</a>-要科学上网
-            <a href="https://mifun.tv/">MiFun</a>
-            <a href="https://www.crsky.com/soft/607216.html">oneAnime</a>
-            <a href="https://www.dm5.com/">动漫屋</a>
-            <a href="https://www.silisili.tv/">嘶哩嘶哩</a>
-            <a href="https://www.downkuai.com/android/183162.html">Lanerc</a>
-            <a href="https://www.stw6.com/archives/368.html">heibai弹幕</a>
-            <a href="https://dmhy.gate.flag.moe/">动漫花园</a>
-            <a href="https://dmhy.myheartsite.com/">动漫花园镜像站</a>
+    
+    <div class="container">
+        <div class="section">
+            <h2>新闻资讯</h2>
+            <ol class="news-list">
+                <li><a href="https://b23.tv/bXEZHGN">【UTAlet教程】手机上也能使用UTAU音源的软件【基本篇】-哔哩哔哩</a></li>
+                <li><a href="https://b23.tv/43IkSCh">【熟肉】【COEIROINK】免费的AI音声合成软件-哔哩哔哩</a></li>
+                <li><a href="https://bangumi.tv/group/topic/430934">开源开放的番剧推荐计划 - 友声 Anime Episode Recommender</a></li>
+                <li><a href="https://www.bilibili.com/video/BV118egzGEvj/?spm_id_from=333.337.search-card.all.click&vd_source=2f740c00cfe14d9860c2829322f9898f">reinaManager-视觉小说管理器</a></li>
+                <li><a href="https://b23.tv/5Y55JZW">【我做了一个可以识别动漫人物的网站，支持3100部动漫+1800galgame！-哔哩哔哩】</a></li>
+            </ol>
         </div>
-        <div class="url-line">
-            <h2>漫画/图片</h2>
-            <a href="https://pica519.com/#home">哔咔下载</a>
-            <a href="https://mhua5.com/">漫画屋</a>
-            <a href="https://www.manhuazhan.com/">漫画站</a>
-            <a href="https://www.koxmoe.com/">kox.moe漫画</a>
-            <a href="https://comic-walker.com/">comic-walker</a>
-            <a href="http://119.manhuaren.com/">漫画人</a>
-            <a href="https://www.yymanhua.com/">yy漫画</a>
-            <a href="https://www.mangacopy.com/">拷贝漫画</a>
-            <a href="https://www.haoduoman.com/">好多漫</a>
-            <a href="https://www.kanman.com/">看漫画</a>
-            <a href="https://www.manben.com/">漫本</a>
-            <a href="https://konachan.net/">konachan壁纸</a>
-            <a href="http://www.umu168.com/">唔姆壁纸</a>
-            <a href="https://www.acgmh2025.xyz">ACG漫画网</a>
-            <a href="https://www.sjmanhua.com/">世纪漫画</a>
-            <a href="https://pixibloom.kafuuchino.com.cn">pixibloom-pixiv国内镜像站</a>
-            <a href="https://cn.baozimhcn.com/">包子漫画</a>
-            <a href="https://wwzs.lanzouu.com/ioZd337k49wb">漫蛙</a>
+        
+        <div class="section">
+            <h2>资源下载</h2>
+            <ol class="download-list">
+                <li><a href="https://acg.cloudns.org/">acgn导航</a></li>
+                <li><a href="https://bgm.tv/group/topic/387197">资源分享-网站分享~动画、小说、漫画、网盘BT搜索...</a></li>
+                <li><a href="https://www.shimeng.ink/">轼梦的の资源站</a></li>
+                <li><a href="https://www.acgjc.com/xy/130146.html">2.5t游戏</a></li>
+                <li><a href="https://share.gistwillan.top/">gistwillian的资源网盘</a> (游戏/软件/安卓/windows/ipa)</li>
+                <li><a href="https://www.sakuraxy.top/">玄夜の资源小站 - 获取千万好用软件游戏以及动漫推荐</a></li>
+                <li><a href="https://baiyeacg.top/">白夜の资源站</a></li>
+                <li><a href="https://yftdtddh.pages.dev/">资源汇总</a> - 动画 影视 磁力 网盘 漫画 小说 音乐 游戏 资讯 社区 综合 图站 工具 软件</li>
+                <li><a href="https://www.wjshub.cn/">悟界ShareHub</a> - 游戏 软件 资源 影视</li>
+            </ol>
         </div>
-        <div class="url-line">
-            <h2>游戏</h2>
-            <a href="游戏区/index.html">主页</a>
-            <a href="怀旧/index.html">怀旧</a>
-            <a href="https://2439905184.github.io/galgame-resouce-web/">galgame导航</a>
-            <a href="galgame专区/index.html">galgame专区</a>
-            <a href="https://www.668play.com/">668游戏仓库</a>
-            <a href="https://cn.thdog.moe">东方project-莉莉云</a>
-            <a href="https://koyso.to/">koyso</a>
-            <a href="https://m871.xyz/?ref=101406#/">米哈社</a>
-            <a href="http://j2mecloud.ddns.net:3092/index.jsp">j2mecloud</a>
-            <a href="2000j2me.html">2000多个j2me游戏下载</a>
+        
+        <h2 class="url-navigation">网址导航</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <h3>动画</h3>
+                <ul class="url-list">
+                    <li><a href="https://freelancerdh.free.nf/anime/index.html">在线追番网站</a></li>
+                    <li><a href="https://anich.emmmm.eu.org/app.html">Anich</a></li>
+                    <li><a href="https://myani.org/">Animeko</a></li>
+                    <li><a href="https://9ciyuan.com/">囧次元</a></li>
+                    <li><a href="https://bgmlist.com/">每日放送（新番资讯）</a></li>
+                    <li><a href="https://v.lanerc.app">Lanerc追番</a></li>
+                    <li><a href="https://xmoe.app/">xmoe</a></li>
+                    <li><a href="https://oneghg.com/">动漫共和国</a></li>
+                    <li><a href="https://www.crunchyroll.com/">crunchyroll</a> - 要科学上网</li>
+                    <li><a href="https://mifun.tv/">MiFun</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>漫画/图片</h3>
+                <ul class="url-list">
+                    <li><a href="https://pica519.com/#home">哔咔下载</a></li>
+                    <li><a href="https://mhua5.com/">漫画屋</a></li>
+                    <li><a href="https://www.manhuazhan.com/">漫画站</a></li>
+                    <li><a href="https://www.koxmoe.com/">kox.moe漫画</a></li>
+                    <li><a href="https://comic-walker.com/">comic-walker</a></li>
+                    <li><a href="http://119.manhuaren.com/">漫画人</a></li>
+                    <li><a href="https://www.yymanhua.com/">yy漫画</a></li>
+                    <li><a href="https://www.mangacopy.com/">拷贝漫画</a></li>
+                    <li><a href="https://www.haoduoman.com/">好多漫</a></li>
+                    <li><a href="https://www.kanman.com/">看漫画</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>游戏</h3>
+                <ul class="url-list">
+                    <li><a href="游戏区/index.html">主页</a></li>
+                    <li><a href="怀旧/index.html">怀旧</a></li>
+                    <li><a href="https://2439905184.github.io/galgame-resouce-web/">galgame导航</a></li>
+                    <li><a href="galgame专区/index.html">galgame专区</a></li>
+                    <li><a href="https://www.668play.com/">668游戏仓库</a></li>
+                    <li><a href="https://cn.thdog.moe">东方project-莉莉云</a></li>
+                    <li><a href="https://koyso.to/">koyso</a></li>
+                    <li><a href="https://m871.xyz/?ref=101406#/">米哈社</a></li>
+                    <li><a href="http://j2mecloud.ddns.net:3092/index.jsp">j2mecloud</a></li>
+                    <li><a href="2000j2me.html">2000多个j2me游戏下载</a></li>
             <a href="https://apkvision.org/">apkvision</a>
             <a href="https://b23.tv/Y4etrdI">mujika阁楼跑酷大招版</a>
             <a href="https://b23.tv/jIwLQ5S">mujika睦头+超祥大冒险🥒整合版实机演示【游戏】</a>
@@ -163,8 +462,8 @@
             <a href="">GameCube</a>
             <a href="">QuickPlay</a>
             <a href="">游侠网</a>
-            <a href="">HDRZone</a>
             <a href="">游民星空</a>
+            <a href="">HDRZone</a>
             <a href="">RPGVault</a>
             <a href="">Multiplayer</a>
             <a href="">EmuCentral</a>
@@ -173,124 +472,106 @@
             <a href="https://www.emu666.com/">emu666</a>
             <a href="https://6669acg.com">桃子汉化</a>
             <a href="https://app.3dmgame.com/zt/xxhanhuaz/">小熊汉化组游戏</a>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>音乐</h3>
+                <ul class="url-list">
+                    <li><a href="音频区/index.html">音乐区</a></li>
+                    <li><a href="音频区/曲谱.html">曲谱</a></li>
+                    <li><a href="https://www.missevan.com/">猫耳fm</a></li>
+                    <li><a href="https://music.alger.fun">algermusic</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>二次元百科</h3>
+                <ul class="url-list">
+                    <li><a href="p主百科/index.html">p主百科</a></li>
+                    <li><a href="https://mwiki.cc/">喵御宅百科</a></li>
+                    <li><a href="https://moegirl.icu/Mainpage">萌娘百科</a></li>
+                </ul>
+            </div>
+            
+            <div class="category-card">
+                <h3>站长推荐</h3>
+                <ul class="url-list">
+                    <li><a href="动漫与天道/index.html">动漫与天道</a></li>
+                    <li><a href="动漫哲学/index.html">动漫哲学</a></li>
+                    <li><a href="收录区域/经典gif表情包/index.html">表情包</a></li>
+                    <li><a href="动画研究/index.html">站长的画风研究</a></li>
+                    <li><a href="动漫剧情概括/index.html">动漫剧情概括</a></li>
+                    <li><a href="动漫分析/index.html">动漫分析</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="url-line">
-            <h2>小说/视觉小说</h2>
-            <a href="https://www.linovelib.com/">bili轻小说</a>
-            <a href="https://www.renpy.org/">renpy引擎</a>
+        
+        <div class="software-section">
+            <h2>软件下载</h2>
+            <ol class="software-list">
+                <li><a href="https://github.com/Predidit/Kazumi">kazumi追番</a></li>
+                <li><a href="https://miru.js.org/">miru</a></li>
+                <li><a href="https://www.123865.com/s/n2x7Td-Pkwa3?">COEIROINK_WIN_CPU_v.2.11.2 AI语音合成软件提取码:AzH1</a></li>
+                <li><a href="https://wwzs.lanzouu.com/iCRhG32y58ng">动漫共和国apk</a></li>
+                <li><a href="https://wwzs.lanzouu.com/iG9ZS32ycr4d">开心动漫</a></li>
+                <li><a href="https://github.com/vscodev/neokikoeru">nekikoeru-基于云存储的DLsite音声作品管理和媒体播放软件，使用Go和Vue3开发</a></li>
+            </ol>
         </div>
-        <div class="url-line">
-            <h2>音乐</h2>
-            <a href="音频区/index.html">音乐区</a>
-            <a href="音频区/曲谱.html">曲谱</a>
-            <a href="https://www.missevan.com/">猫耳fm</a>
-            <a href="https://music.alger.fun">algermusic</a>
+        
+        <div class="other-links">
+            <h2>其他网页</h2>
+            <div class="link-grid">
+                <div class="link-item">
+                    <img src="https://rinshankaiho.fun/favicon.ico" alt="">
+                    <a href="https://rinshankaiho.fun/list">bangumi新番排行榜</a>
+                </div>
+            </div>
+            
+            <h2 style="margin-top: 1.5rem;">动漫社区</h2>
+            <div class="link-grid">
+                <div class="link-item">
+                    <a href="https://moetv.acgi.moe/">爱萌社</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://noe.vup.lol">Noesis 游戏语音搜索</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://www.lightnovel.fun/cn/">轻之国度</a>
+                </div>
+            </div>
         </div>
-        <div class="url-line">
-            <h2>二次元百科</h2>
-            <a href="p主百科/index.html">p主百科</a>
-            <a href="https://mwiki.cc/">喵御宅百科</a>
-            <a href="https://moegirl.icu/Mainpage">萌娘百科</a>
+        
+        <div class="recommend-section">
+            <h1>站长推荐</h1>
+            <div class="recommend-links">
+                <a href="https://bangumi.tv/index/76477">值得看的番（条目）</a>
+            </div>
+            
+            <dl>
+                <dt>萝莉变御姐 变大变小合集 站长收藏</dt>
+                <dd><a href="girl_to_big.html">变大变小合集</a></dd>
+                
+                <dt>性转专题</dt>
+                <dd><a href="https://b23.tv/6aaySlS">【班级全员性转？只有实现愿望才能离开？变成女生后，该不会喜欢上男生吧！！-哔哩哔哩】</a></dd>
+            </dl>
         </div>
-        <div class="url-line">
-            <h2>自学绘画</h2>
-            <a href="https://www.moehui.com/293050.html">萌绘</a>
-        </div>
-       <div class="url-line">
-        <h2>cosplay</h2>
-        <a href="https://cosz.com/">Cosz（C站）</a>
-       </div>
-        <div class="url-line">
-            <h2>网站</h2>
-            <a href="https://vndb.org/">vndb</a>
-            <a href="https://sascacci.com/">sascacci音乐互动多媒体</a>
-            <a href="https://aidn.jp/mikutap/">mikutap音乐互动多媒体</a>
-            <a href="https://uta-tap.pages.dev/">可以自定义bgm和歌姬的uta-tap(mikutap)</a>
-            <a href="https://world.execute.umstudio.top/">world.execute("me")互动多媒体</a>
-            <h2>动漫管理和记录网站</h2>
-            <a href="https://bangumi.tv/">bangumi</a>
-            <a href="https://www.anibk.com/">动漫科</a>
-        </div>
-        <div class="url-line">
-            <h2>kigrumi</h2>
-            <a href="https://how.kig.land/">KIGURUMI 不完全手册</a>
-        </div>
-        <div class="url-line">
-            <h2>创作者必备</h2>
-            <a href="https://www.aplaybox.com/">模之屋</a>
-            <a href="https://bowlroll.net/">browrel</a>
-      
-        </div>
-        <div class="url-line">
-            <h2>二次元常用工具</h2>
-            <a href="https://trace.moe/">截图搜动漫</a>
-            <a href="https://dio.jite.me/">动漫人脸识别</a>
-        </div>
-        <div class="url-line">
-            <h2>站长的动漫研究</h2>
-            <a href="动漫与天道/index.html">动漫与天道</a>
-            <a href="动漫哲学/index.html">动漫哲学</a>
-            <a href="收录区域/经典gif表情包/index.html">表情包</a>
-            <a href="动画研究/index.html">站长的画风研究</a>
-            <a href="动漫剧情概括/index.html">动漫剧情概括</a>
-            <a href="动漫分析/index.html">动漫分析</a>
-        </div>
-        <div class="url-line">
-            <h2>网友的动漫研究</h2>
-            <a href="https://b23.tv/slVxjY0">【对NOeSIS01旧版部分剧情讲解以及其中哲学思想的简单介绍-哔哩哔哩】</a>
-        </div>
-        <hr/>
-        <h2>软件下载</h2>
-        <ol>
-            <li><a href="https://github.com/Predidit/Kazumi">kazumi追番</a></li>
-            <li><a href="https://miru.js.org/">miru</a></li>
-            <li><a href="https://www.123865.com/s/n2x7Td-Pkwa3?">COEIROINK_WIN_CPU_v.2.11.2 AI语音合成软件提取码:AzH1</a></li>
-            <li><a href="https://wwzs.lanzouu.com/iCRhG32y58ng">动漫共和国apk</a></li>
-            <li><a href="https://wwzs.lanzouu.com/iG9ZS32ycr4d">开心动漫</a></li>
-            <li><a href="https://github.com/vscodev/neokikoeru">nekikoeru-基于云存储的DLsite音声作品管理和媒体播放软件，使用Go和Vue3开发</a></li>
-        </ol>
     </div>
-    <div>
-        <h2>其他网页</h2>
-        <img src="https://rinshankaiho.fun/favicon.ico" alt=""><a href="https://rinshankaiho.fun/list">bangumi新番排行榜</a>
-        <h2>动漫社区</h2>
-        <a href="https://moetv.acgi.moe/">爱萌社</a>
-        <a href="https://noe.vup.lol">Noesis 游戏语音搜索</a>
-        <a href="https://www.lightnovel.fun/cn/">轻之国度</a>
-        <h1>站长推荐</h1>
-        <a href="https://bangumi.tv/index/76477">值得看的番（条目）</a>
-        <dl>特色专题
-            <dt>萝莉变御姐 变大变小合集 站长收藏</dt>
-            <dd><a href="girl_to_big.html">变大变小合集</a></dd>
-            <dt>性转专题</dt>
-            <dd><a href="https://b23.tv/6aaySlS">【班级全员性转？只有实现愿望才能离开？变成女生后，该不会喜欢上男生吧！！-哔哩哔哩】 </a></dd>
-        </dl>
-    </div>
-  
-    <h2>相关链接</h2>
-    <a href="https://gitee.com/h128/animation-mini-station">动画小站</a>
-    <button onclick="jump('lifan')">里番</button>
-    <h2>动漫导航</h2>
-    <a href="https://gitee.com/h128/anime-enthusiast-navigation">追番导航</a>
-    <a href="https://www.moe48.com/">萌导航</a>
-    <a href="https://anifun.cn/">anifun</a>
-    <a href="https://hub.lineoff.fun/">萌站：次元导航</a>
-    <a href="https://clicli.com.cn/">clicli导航</a>
-    <script src="js/​​set-all-links-blank.js"></script>
+    
+    <footer>
+        <p>投稿请使用邮箱，投递到2439905184@qq.com</p>
+        <button onclick="jump('lifan')" style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--primary-color); color: white; border: none; border-radius: 5px; cursor: pointer;">里番</button>
+    </footer>
+    
     <script>
-        setAllLinksToBlank()
         function jump(name) {
-            if(name == 'lifan')
-            {
-                var a = confirm("请确保您能接受R18内容")
-                if(a)
-                {
-                    window.open("https://bangumi.tv/group/topic/420752")
+            if(name == 'lifan') {
+                var a = confirm("请确保您能接受R18内容");
+                if(a) {
+                    window.open("https://bangumi.tv/group/topic/420752");
                 }
             }
         }
     </script>
-    
-    <p>投稿请使用邮箱，投递到2439905184@qq.com</p>
 </body>
 </html>
