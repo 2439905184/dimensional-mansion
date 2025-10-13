@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>次元宅 - ACGN导航+站长的收藏</title>
+    <link rel="stylesheet" href="css/tag.css">
     <style>
         :root {
             --primary-color: #ff6b35;
@@ -180,29 +181,34 @@
         }
         
         .url-list li {
-            margin-bottom: 0.5rem;
-        }
-        
-        .url-list a {
-            color: var(--link-color);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.3rem 0;
-            transition: all 0.3s ease;
-        }
-        
-        .url-list a:hover {
-            color: var(--link-hover);
-            text-decoration: underline;
-        }
-        
-        .url-list a::before {
-            content: "▶";
-            font-size: 0.8rem;
-            color: var(--secondary-color);
-        }
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.url-list a {
+    color: var(--link-color);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+    padding: 0.3rem 0;
+    transition: all 0.3s ease;
+}
+
+.url-list a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+.url-list a::before {
+    content: "▶";
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+}
         
         .software-section {
             background-color: var(--card-bg);
@@ -391,32 +397,33 @@
             <div class="category-card">
                 <h3>动画</h3>
                 <ul class="url-list">
-                    <li><a href="https://freelancerdh.free.nf/anime/index.html">在线追番网站</a></li>
-                    <li><a href="https://anich.emmmm.eu.org/app.html">Anich</a></li>
-                    <li><a href="https://myani.org/">Animeko</a></li>
+                    <li><a href="https://freelancerdh.free.nf/anime/index.html">在线追番网站</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://anich.emmmm.eu.org/app.html">Anich</a><span class="tag tag-android">android</span></li>
+                    <li><a href="https://myani.org/">Animeko</a><span class="tag tag-android">android</span></li>
                     <li><a href="https://9ciyuan.com/">囧次元</a></li>
-                    <li><a href="https://bgmlist.com/">每日放送（新番资讯）</a></li>
-                    <li><a href="https://v.lanerc.app">Lanerc追番</a></li>
-                    <li><a href="https://xmoe.app/">xmoe</a></li>
-                    <li><a href="https://oneghg.com/">动漫共和国</a></li>
-                    <li><a href="https://www.crunchyroll.com/">crunchyroll</a> - 要科学上网</li>
-                    <li><a href="https://mifun.tv/">MiFun</a></li>
+                    <li><a href="https://bgmlist.com/">每日放送（新番资讯）</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://v.lanerc.app">Lanerc追番</a><span class="tag tag-android">android</span></li>
+                    <li><a href="https://xmoe.app/">xmoe</a><span class="tag tag-android">android</span></li>
+                    <li><a href="https://oneghg.com/">动漫共和国</a><span class="tag tag-android">android</span></li>
+                    <li><a href="https://www.crunchyroll.com/">crunchyroll</a><span class="tag tag-web">网页</span>要科学上网</li>
+                    <li><a href="https://mifun.tv/">MiFun</a><span class="tag tag-android">android</span></li>
                 </ul>
             </div>
             
             <div class="category-card">
                 <h3>漫画/图片</h3>
                 <ul class="url-list">
-                    <li><a href="https://pica519.com/#home">哔咔下载</a></li>
-                    <li><a href="https://mhua5.com/">漫画屋</a></li>
-                    <li><a href="https://www.manhuazhan.com/">漫画站</a></li>
-                    <li><a href="https://www.koxmoe.com/">kox.moe漫画</a></li>
+                    <li><a href="https://pica519.com/#home">哔咔下载</a><span class="tag tag-android">android</span></li>
+                    <li><a href="https://mhua5.com/">漫画屋</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://www.manhuazhan.com/">漫画站</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://www.koxmoe.com/">kox.moe漫画</a><span class="tag tag-web">网页</span></li>
                     <li><a href="https://comic-walker.com/">comic-walker</a></li>
-                    <li><a href="http://119.manhuaren.com/">漫画人</a></li>
-                    <li><a href="https://www.yymanhua.com/">yy漫画</a></li>
-                    <li><a href="https://www.mangacopy.com/">拷贝漫画</a></li>
-                    <li><a href="https://www.haoduoman.com/">好多漫</a></li>
-                    <li><a href="https://www.kanman.com/">看漫画</a></li>
+                    <li><a href="http://119.manhuaren.com/">漫画人</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://www.yymanhua.com/">yy漫画</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://www.mangacopy.com/">拷贝漫画</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://www.haoduoman.com/">好多漫</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="https://www.kanman.com/">看漫画</a><span class="tag tag-web">网页</span></li>
+                    <li><a href="http://kotatsu.app/">kotatus</a><span class="tag tag-web">网页</span></li>
                 </ul>
             </div>
             
