@@ -367,6 +367,30 @@
                 align-items: center;
             }
         }
+        #sidebar{
+          display: inline-flex;
+          flex-direction: column;
+        }
+        #sidebar li {
+            color: blue;
+        }
+        #sidebar li:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #content {
+            display: inline-flex;
+            background: #fff;
+            color: inherit;
+            border: 1px solid #eee;
+            box-shadow: 0 0 0.5em #999;
+            border-radius: 2px;
+            padding: 1.556em 2em 2em;
+            margin-bottom: 0.5em;
+            overflow-x: clip;
+            overflow-y: visible;
+            word-wrap: break-word;
+        }
     </style>
 </head>
 <body>
@@ -379,7 +403,28 @@
             </div>
         </nav>
     </header>
-    
+    <!-- todo -->
+    <div id="sidebar">
+        <h2>导航栏</h2>
+        <ol>
+            网站导航
+            <li>新闻资讯</li>
+            <li>资源下载</li>
+            <li>网址导航</li>
+
+        </ol>
+        <ol>游戏导航
+            <li>游戏攻略</li>
+        </ol>
+    </div>
+    <div id="content">
+
+    </div>
+    <div id="game">
+        <h2>游戏攻略</h2>
+        <a href="游戏攻略/littlelovel.html">爱养成1攻略</a>
+    </div>
+
     <div class="quick-links">
         <a target="_blank" href="https://www.bilibili.com/"><img src="img/ico/bilibili.ico" alt="bilibili">bilibili</a>
         <a target="_blank" href="https://www.mfuns.net/"><img src="img/ico/mfuns.ico" alt="mfuns">mfuns</a>
