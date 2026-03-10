@@ -391,6 +391,11 @@
             overflow-y: visible;
             word-wrap: break-word;
         }
+        /* 新闻资讯样式 */
+        .news-list + .news-list
+        {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -435,6 +440,12 @@
     <div class="container">
         <div class="section">
             <h2>新闻资讯</h2>
+            <button class="" onclick="changeNewsList('software')">软件新闻</button>
+            <button class="" onclick="changeNewsList('cosplay')">cosplay</button>
+            <button class="" onclick="changeNewsList('animeZongHe')">动漫综合</button>
+            <button class="" onclick="changeNewsList('novel')">小说</button>
+            <button class="" onclick="changeNewsList('anime')">动画</button>
+            <button class="" onclick="changeNewsList('yejie')">业界</button>
             <ol class="news-list">
                 <li><a href="https://b23.tv/bXEZHGN">【UTAlet教程】手机上也能使用UTAU音源的软件【基本篇】-哔哩哔哩</a></li>
                 <li><a href="https://b23.tv/43IkSCh">【熟肉】【COEIROINK】免费的AI音声合成软件-哔哩哔哩</a></li>
@@ -444,6 +455,16 @@
                 <li><a href="https://b23.tv/aWVGDSH">【【开源AI虚拟伙伴】Web版v4.0发布 高自由度网页二次元2D、3D AI伙伴 枫云AI-哔哩哔哩】</a></li>
                 <li><a href="https://paper2gal.com/">paper2Gal-论文转galgame-好玩的开源项目</a></li>
             </ol>
+            <ol class="news-list">
+                <li><a href="http://ent.cctv.com/20070528/102050_4.shtml">[人型电脑天使心]小叽COS秀</a> </li>
+            </ol>
+            <ol class="news-list">
+                <li><a href="https://ent.cctv.com/20070531/102221_2.shtml">自制女友国产</a>-工艺：水管（骨架），泡沫塑料（身体），雕刻（塑形）</li>
+            </ol>
+            <ol class="news-list"></ol>
+            <ol class="news-list"></ol>
+            <ol class="news-list"></ol>
+            <ol class="news-list"></ol>
         </div>
         
         <div class="section">
@@ -685,12 +706,50 @@
     </footer>
     
     <script>
-        function jump(name) {
-            if(name == 'lifan') {
+        function jump(name) 
+        {
+            if(name == 'lifan') 
+            {
                 var a = confirm("请确保您能接受R18内容");
                 if(a) {
                     window.open("https://bangumi.tv/group/topic/420752");
                 }
+            }
+        }
+        function showNewsList(newsList, index)
+        {
+            for (var i = 0; i < newsList.length; i++)
+                {
+                    if (newsList[i].className != 'news-list software-list')
+                    {
+                        newsList[i].style.display = 'none';
+                    }
+                }
+            newsList[index].style.display = 'block';
+        }
+        function changeNewsList(typeName)
+        {
+            const newsList = document.getElementsByClassName('news-list');
+            if (typeName == "software")
+            {
+                showNewsList(newsList,0);
+            }
+            else if (typeName == 'cosplay')
+            {
+                
+                showNewsList(newsList,1);
+            }
+            else if (typeName == 'animeZongHe')
+            {
+                showNewsList(newsList,2);
+            }
+            else if (typeName == "anime")
+            {
+                showNewsList(newsList,3);
+            }
+            else if (typeName == "yejie")
+            {
+                showNewsList(newsList,4);
             }
         }
     </script>
