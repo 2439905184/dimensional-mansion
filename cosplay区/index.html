@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cosplay区</title>
+    <style>
+        .fenqu-title{
+            border-bottom: solid 4px red;
+        }
+        .fenqu-title > h2{
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="fenqu-title">    <h2>收录cosplay教程等信息</h2></div>
+    <button class="" onclick="change('cosplay')">传统cosplay</button>
+    <button class="" onclick="change('kigrumi')">kigrumi</button>
+    <button class="" onclick="change('other')"> 相关项目/软件/社区</button>
+    <div class="cosplayContainer">
+        <h2>传统cosplay</h2>
+        <ol>
+            <li>假发选择</li>
+            <li>化妆教程</li>
+            <li>cos服选择</li>
+        </ol>
+    </div>
+    <div class="cosplayContainer"><h2>kigrumi</h2>
+        <ol>
+            <li><a href="https://baike.baidu.com/item/%E7%9B%B8%E7%BA%B8/305280">相纸的意思</a> <a href="https://baike.baidu.com/item/%E7%BD%91%E7%BA%B8/207178">网纸的意思</a></li>
+            <li><h2>kigrumi中全相眼和半网眼的全和半的解释</h2>
+                <p>
+                    在Kigurumi的实际术语中，“全”和“半”通常指的是“网纱的覆盖范围”，也就是眼片不透光部分的面积大小。
+                    
+                    你看到的“全相眼彻底挡住了”，其实是特指那种“只在眼球侧面或特定角度透光”的情况。以下是基于“视觉结果”的准确区分：
+                    
+                    · 全相眼（你看到的那种）
+                      · 外观： 眼睛部分（包括瞳孔和高光）全部实色涂装，完全不透光。从正面看，眼睛就像印刷在脸壳上的贴纸，没有空洞感。
+                      · 视野： 通过眼眶与脸壳的缝隙或眼球侧面的透明部分向外看。原理类似透过猫眼或百叶窗，需要适应。
+                      · 效果： 正面看最逼真，绝不会穿帮露眼睛。
+                    · 半网眼（常见解释）
+                      · 外观： 瞳孔区域是网纱或透明材质，眼白部分通常是实色。
+                      · 视野： 直接透过瞳孔区域的网纱向外看。
+                      · 效果： 视野较好，但近看可能感觉眼睛有点“深”，能看到里面的人影。
+                    · 全网眼（一致）
+                      · 外观： 整个眼球（瞳孔+眼白）都是深色网纱。
+                      · 视野： 透过整片网纱看外面，视野最暗。
+                      · 效果： 完全看不到里面，但眼睛部分像贴了深色膜。
+                    
+                    所以，下次买眼片时如果想达到你视频里的效果，可以直接问卖家：“这款全相眼是正面不透光、靠眼眶侧面看的吗？” 这样沟通会更准确。
+                    
+                    需要我再讲讲这种“侧面透光”款式的佩戴视角具体是什么样的吗？</p>
+            </li>
+            <li><a href="https://b23.tv/xl7Yuck">【头壳全相纸，半网眼，全网眼的内部视野区别～kigurumi-哔哩哔哩】</a></li>
+        </ol>
+    </div>
+    <div class="cosplayContainer">
+        <h2>相关项目/软件/社区</h2>
+        <ol>
+            <li><a href="http://kigmap.com/">KigMap-娃图-Kigurumi分享交友网站</a></li>
+        </ol>
+    </div>
+    <script>
+        const cosplayContainer = document.getElementsByClassName("cosplayContainer")
+        function show(list, index)
+        {
+            for (var i = 0; i < list.length; i++)
+            {
+                        list[i].style.display = 'none';
+            }
+            list[index].style.display = 'block';
+        }
+        function change(typeName)
+        {
+            if (typeName == "cosplay")
+            {
+                show(cosplayContainer,0);
+            }
+            else if (typeName == "kigrumi")
+            {
+                show(cosplayContainer,1);
+            }
+            else if (typeName == "other")
+            {
+                show(cosplayContainer,2)
+            }
+        }
+    </script>
+</body>
+</html>
