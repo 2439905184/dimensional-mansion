@@ -672,6 +672,9 @@
                     <img src="https://rinshankaiho.fun/favicon.ico" alt="">
                     <a href="https://rinshankaiho.fun/list">bangumi新番排行榜</a>
                 </div>
+                <div class="link-item">
+                    <a href="https://madohomu.love/">圆神晓美焰CP站</a>
+                </div>
             </div>
             
             <h2 style="margin-top: 1.5rem;">动漫社区</h2>
