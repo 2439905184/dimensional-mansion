@@ -654,6 +654,10 @@
             </ol>
         </div>
         <div class="software-section">
+            <h2>种子tracker</h2>
+            <ol class="software-list">
+                <li><a href="https://acgtracker.com/">https://acgtracker.com/</a></li>
+            </ol>
             <h2>游戏下载</h2>
             <ol class="software-list">
                <li><a href="https://pan.quark.cn/s/40cf114846a6">超级可莉</a> 本质就是猫里奥的改版 <!--<a href="">蓝奏云</a>--></li>
@@ -686,6 +690,12 @@
                 </div>
                 <div class="link-item">
                     <a href="https://www.tucao.moe/">吐槽弹幕网</a>
+                </div>
+                <div class="link-item">
+                    <a href="http://www.moeol.com/">中国MMD同萌社</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://acg17.com/">宅在一起</a>
                 </div>
             </div>
         </div>
