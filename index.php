@@ -463,8 +463,8 @@
                 <li><a href="https://ent.cctv.com/20070531/102221_2.shtml">自制女友国产</a>-工艺：水管（骨架），泡沫塑料（身体），雕刻（塑形）</li>
                 <li><a href="https://b23.tv/3TY3uMf">【把2002年的D3D8游戏搬上Android——东方红魔乡 SDL2/GLES 跨平台移植记录-哔哩哔哩】</a></li>
                 <li><a href="news.php?title=视觉小说数据库VNDB创始人离世了&content=<?php echo urlencode('<img src="img/vndb_ceator_news.jpg" alt="Yorhel has passed away. He was known for running vndb, a website he created in 2007. The moderation team is working to preserve the website but cannot provide details at the moment.">'); ?>">
-                视觉小说数据库VNDB创始人离世了
-            </a></li>
+                视觉小说数据库VNDB创始人离世了</a></li>
+                <li><a href="https://www.bilibili.com/opus/1182794849037844485">截止到2026-3-23 noesis诉说谎言的记忆的作者（C大）官网已经删除网站内容</a></li>
             </ol>
             <ol class="news-list"></ol>
             <ol class="news-list"></ol>
