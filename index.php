@@ -700,6 +700,9 @@
                 <div class="link-item">
                     <a href="https://acg17.com/">宅在一起</a>
                 </div>
+                <div class="link-item">
+                    <a href="https://www.nuomill.com/">糯米洛洛</a>
+                </div>
             </div>
         </div>
         
