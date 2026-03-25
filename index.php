@@ -644,13 +644,14 @@
         <div class="software-section">
             <h2>软件下载</h2>
             <ol class="software-list">
-                <li><a href="https://github.com/Predidit/Kazumi">kazumi追番</a></li>
-                <li><a href="https://gitee.com/anime-flow/AnimeFlow">AnimeFlow追番</a></li>
-                <li><a href="https://miru.js.org/">miru</a></li>
+                <li><a href="https://github.com/Predidit/Kazumi">kazumi</a><span class="tag tag-anime">追番</span></li>
+                <li><a href="https://gitee.com/anime-flow/AnimeFlow">AnimeFlow</a><span class="tag tag-anime">追番</span></li>
+                <li><a href="https://miru.js.org/">miru</a><span class="tag tag-comic">漫画</span></li>
                 <li><a href="https://www.123865.com/s/n2x7Td-Pkwa3?">COEIROINK_WIN_CPU_v.2.11.2 AI语音合成软件提取码:AzH1</a></li>
-                <li><a href="https://wwzs.lanzouu.com/iCRhG32y58ng">动漫共和国apk</a></li>
-                <li><a href="https://wwzs.lanzouu.com/iG9ZS32ycr4d">开心动漫</a></li>
+                <li><a href="https://wwzs.lanzouu.com/iCRhG32y58ng">动漫共和国apk</a><span class="tag tag-anime">追番</span></li>
+                <!-- <li><a href="https://wwzs.lanzouu.com/iG9ZS32ycr4d">开心动漫</a></li> -->
                 <li><a href="https://github.com/vscodev/neokikoeru">nekikoeru-基于云存储的DLsite音声作品管理和媒体播放软件，使用Go和Vue3开发</a></li>
+                <li><a href="https://mihon.app/">mihon</a><span class="tag tag-comic">漫画</span></li>
             </ol>
         </div>
         <div class="software-section">
