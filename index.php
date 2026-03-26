@@ -596,6 +596,7 @@
                     <a target="_blank" href="https://gamebanana.com/">各种独立游戏</a></a>
                     <a href="https://bingtan233.github.io/plane-game/">开源stg-plane-game</a>
                     <a href="https://www.openapk.net/zh/anuto-td/ch.logixisland.anuto/">AnutoTD-开源塔防游戏</a>
+                    <a href="https://krunker.io/?game=SIN:v5rpe">krunker.io</a>
                 </ul>
             </div>
             
