@@ -598,6 +598,7 @@
                     <a href="https://www.openapk.net/zh/anuto-td/ch.logixisland.anuto/">AnutoTD-开源塔防游戏</a>
                     <a href="https://krunker.io/?game=SIN:v5rpe">krunker.io</a>
                     <a href="http://cloud.touhou.best/">车万云</a>
+                    <a href="https://github.com/dyang886/Game-Cheats-Manager">风灵月影游戏作弊下载工具（找修改器）</a>
                 </ul>
             </div>
             
