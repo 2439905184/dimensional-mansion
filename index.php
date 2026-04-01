@@ -447,6 +447,7 @@
             <button class="" onclick="changeNewsList('novel')">小说</button>
             <button class="" onclick="changeNewsList('anime')">动画</button>
             <button class="" onclick="changeNewsList('yejie')">业界</button>
+            <!-- 软件新闻 -->
             <ol class="news-list">
                 <li><a href="https://b23.tv/bXEZHGN">【UTAlet教程】手机上也能使用UTAU音源的软件【基本篇】-哔哩哔哩</a></li>
                 <li><a href="https://b23.tv/43IkSCh">【熟肉】【COEIROINK】免费的AI音声合成软件-哔哩哔哩</a></li>
@@ -456,9 +457,11 @@
                 <li><a href="https://b23.tv/aWVGDSH">【【开源AI虚拟伙伴】Web版v4.0发布 高自由度网页二次元2D、3D AI伙伴 枫云AI-哔哩哔哩】</a></li>
                 <li><a href="https://paper2gal.com/">paper2Gal-论文转galgame-好玩的开源项目</a></li>
             </ol>
+            <!-- cosplay -->
             <ol class="news-list">
                 <li><a href="http://ent.cctv.com/20070528/102050_4.shtml">[人型电脑天使心]小叽COS秀</a> </li>
             </ol>
+            <!-- 动漫综合 -->
             <ol class="news-list">
                 <li><a href="https://ent.cctv.com/20070531/102221_2.shtml">自制女友国产</a>-工艺：水管（骨架），泡沫塑料（身体），雕刻（塑形）</li>
                 <li><a href="https://b23.tv/3TY3uMf">【把2002年的D3D8游戏搬上Android——东方红魔乡 SDL2/GLES 跨平台移植记录-哔哩哔哩】</a></li>
@@ -466,10 +469,14 @@
                 视觉小说数据库VNDB创始人离世了</a></li>
                 <li><a href="https://www.bilibili.com/opus/1182794849037844485">截止到2026-3-23 noesis诉说谎言的记忆的作者（C大）官网已经删除网站内容</a></li>
             </ol>
+            <!-- 小说 -->
             <ol class="news-list"></ol>
+            <!-- 动画 -->
             <ol class="news-list"></ol>
+            <!-- 业界 -->
             <ol class="news-list">
                 <li>DWANGO基本不开发opentoonz了，那位shun-iwasawa已经离职很久了我记得。消息来源：粉丝群粉丝Abel,他在discord上面听说的，然后一些老的issue上看到的</li>
+                <li>TapTap游戏进入量产时代个人开发者可日赚5000元日-消息来源-网友：androids7</li>
             </ol>
         </div>
         
