@@ -537,6 +537,8 @@
             <div class="category-card">
                 <h3>游戏</h3>
                 <!-- todo加个分页，做到新网页里面 -->
+                <h3>minori中二社游戏的快进快捷键</h3>
+                <p>长按回车，不是ctrl</p>
                 <ul class="url-list">
                     <li><a href="https://241213.xyz/">RxGame</a></li>
                     <li><a href="游戏区/index.html">主页</a></li>
