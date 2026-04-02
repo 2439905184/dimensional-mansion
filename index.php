@@ -610,7 +610,10 @@
                     <a href="https://github.com/dyang886/Game-Cheats-Manager">风灵月影游戏作弊下载工具（找修改器）</a>
                 </ul>
             </div>
-            
+            <div class="category-card">
+                <h3>gal专区</h3>
+                <a href="galgame专区/index.html">主页</a>
+            </div>
             <div class="category-card">
                 <h3>音乐</h3>
                 <ul class="url-list">
