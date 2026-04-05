@@ -5,49 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>galgame专区</title>
     <style>
-        body
-        {
-            background-image: url("../img/bg.webp");
-            background-repeat: no-repeat;
+        :root {
+            --primary-color: #1e90ff; /* 主色调 - 青蓝色 */
+            --accent-color: #ff9900; /* 强调色 - 橙色 */
+            /* -bg-color: #0f0f0f; 深色背景 */
+            --text-color: var(--primary-color); /* 白色文字 */
+            --link-color: var(--primary-color); /* 链接颜色 */
+            --hover-color: #2e7dff; /* 悬停颜色 */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-color: var(--bg-color); */
+            background: url('../img/bg.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.65);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        ol {
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        ol li {
+            margin: 0.5rem 0;
+            transition: all 0.3s ease;
+        }
+
+        ol li a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-size: 1rem;
+            display: inline-block;
+            position: relative;
+            padding-right: 1.5rem;
+        }
+
+        ol li a:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section:last-child {
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .section h2 {
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            ol li a {
+                font-size: 0.95rem;
+            }
         }
     </style>
 </head>
 <body>
-    <h2>galgame攻略</h2>
-    <ol>
-        <li><a href="片轮少女攻略.txt">片轮少女攻略</a></li>
-        <li><a href="https://www.bilibili.com/read/cv12495945/">千恋万花攻略</a></li>
-        <li><a href="月观行星攻略.txt">月观行星攻略</a></li>
-        <li><a href="../img/sister_is wtich_攻略.png">姐姐是魔女攻略图</a></li>
-        <li><a href="特里诺兰沙罗线怎么进.txt">特里诺兰沙罗线怎么进</a></li>
-    </ol>
-    <h2>galgame/vn下载</h2>
-    <ol>
-        <li><a href="https://acgneko.su/category/%e6%b8%b8%e6%88%8f/galgame">acgneko下载网</a></li>
-        <li><a href="https://www.touchgal.io/">touchgal下载网</a></li>
-        <li><a href="https://pan.touchgal.net/s/kg89ug">朝霞之歌</a></li>
-        <li><a href="https://pan.touchgal.net/s/egxpSx?path=%2F">琉璃交错 ~妹物语～</a></li>
-        <li><a href="https://pan.baidu.com/s/1rGuO4_vYnvgT8low5HkOBw">月观行星</a>提取码: qwqm <a href="https://bangumi.tv/">bangumi</a></li>
-    </ol>
-    <h2>游戏引擎下载</h2>
-    <ol>
-        <li><a href="https://www.renpy.org/">renpy</a></li>
-        <li><a href="https://krkrz.github.io/">krkrz</a></li>
-        <li><a href="https://github.com/denisoa/suika2">suika2</a></li>
-    </ol>
-    <h2>翻译器</h2>
-    <ol>
-        <li><a href="https://wwzs.lanzouu.com/iqSbW2u65jyh">yuki(使用hock技术)</a></li>
-        <li><a href="https://wwzs.lanzouu.com/ix20Z2u67e8d">御坂翻译器—Galgame/文字游戏/漫画多语种实时机翻工具，（需要安装.net runtime 4.7.2）</a></li>
-        <li><a href="https://wwzs.lanzouu.com/iwGiL2u69ube">MisakaHookFinderV1.1.rar</a></li>
-        <li><a href="https://www.123865.com/s/n2x7Td-TRMa3?">vnr(提取码:oLrp)</a></li>
-        <li><a href="https://translator.dango.cloud/">团子ocr</a></li>
-    </ol>
-    <h2>工具下载</h2>
-    <ol>
-        <li><a href="https://pan.baidu.com/s/1ZuuUNgqvNGJswXy7444iKw ">daemon4.30.4 配合yasm的版本</a>:提取码: jujc </li>
-    </ol>
-    <h2>站长推荐</h2>
-    <p>使用团子翻译器，本地ocr+腾讯翻译API(免费使用500w字符每月)</p>
+    <div class="container">
+        <h1 align="center">galgame专区</h1>
+        <h2>galgame攻略</h2>
+        <ol>
+            <li><a href="片轮少女攻略.txt">片轮少女攻略</a></li>
+            <li><a href="https://www.bilibili.com/read/cv12495945/">千恋万花攻略</a></li>
+            <li><a href="月观行星攻略.txt">月观行星攻略</a></li>
+            <li><a href="../img/sister_is wtich_攻略.png">姐姐是魔女攻略图</a></li>
+            <li><a href="特里诺兰沙罗线怎么进.txt">特里诺兰沙罗线怎么进</a></li>
+        </ol>
+        
+        <div class="section">
+            <h2>galgame/vn下载</h2>
+            <ol>
+                <li><a href="https://acgneko.su/category/%e6%b8%b8%e6%88%8f/galgame">acgneko下载网</a></li>
+                <li><a href="https://www.touchgal.io/">touchgal下载网</a></li>
+                <li><a href="https://pan.touchgal.net/s/kg89ug">朝霞之歌</a></li>
+                <li><a href="https://pan.touchgal.net/s/egxpSx?path=%2F">琉璃交错 ~妹物语～</a></li>
+                <li><a href="https://pan.baidu.com/s/1rGuO4_vYnvgT8low5HkOBw">月观行星</a>提取码: qwqm <a href="https://bangumi.tv/">bangumi</a></li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>游戏引擎下载</h2>
+            <ol>
+                <li><a href="https://www.renpy.org/">renpy</a></li>
+                <li><a href="https://krkrz.github.io/">krkrz</a></li>
+                <li><a href="https://github.com/denisoa/suika2">suika2</a></li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>翻译器</h2>
+            <ol>
+                <li><a href="https://wwzs.lanzouu.com/iqSbW2u65jyh">yuki(使用hock技术)</a></li>
+                <li><a href="https://wwzs.lanzouu.com/ix20Z2u67e8d">御坂翻译器—Galgame/文字游戏/漫画多语种实时机翻工具，（需要安装.net runtime 4.7.2）</a></li>
+                <li><a href="https://wwzs.lanzouu.com/iwGiL2u69ube">MisakaHookFinderV1.1.rar</a></li>
+                <li><a href="https://www.123865.com/s/n2x7Td-TRMa3?">vnr(提取码:oLrp)</a></li>
+                <li><a href="https://translator.dango.cloud/">团子ocr</a></li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>工具下载</h2>
+            <ol>
+                <li><a href="https://pan.baidu.com/s/1ZuuUNgqvNGJswXy7444iKw ">daemon4.30.4 配合yasm的版本</a>提取码: jujc </li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>游戏移植</h2>
+            <ol>
+                <li><a href="https://www.cnblogs.com/1288blog/p/19822817">【galgame/视觉小说】移植研究，把用nscripter的冷门老游戏移植到renpy引擎平台的技术研究</a></li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>galgame引擎文档</h2>
+            <ol>
+                <li><a href="https://lalalll-lalalll.github.io/file/NScripter/index.htm">NScripter引擎汉化文档</a></li>
+            </ol>
+        </div>
+        
+        <div class="section">
+            <h2>站长推荐</h2>
+            <p>使用团子翻译器，本地ocr+腾讯翻译API(免费使用500w字符每月)</p>
+        </div>
+    </div>
 </body>
 </html>
