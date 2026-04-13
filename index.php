@@ -429,6 +429,7 @@
         <h2>游戏攻略</h2>
         <a href="游戏攻略/littlelovel.html">爱养成1攻略</a>
         <a href="https://www.bilibili.com/video/BV1sV411k73r?spm_id_from=333.788.videopod.episodes&vd_source=2f740c00cfe14d9860c2829322f9898f&p=36">爱养成1所有结局展示</a>
+        <a href="https://studiopixel.jp/">天谷大辅官网</a>
     </div>
 
     <div class="quick-links">
@@ -608,6 +609,13 @@
                     <a href="https://krunker.io/?game=SIN:v5rpe">krunker.io</a>
                     <a href="http://cloud.touhou.best/">车万云</a>
                     <a href="https://github.com/dyang886/Game-Cheats-Manager">风灵月影游戏作弊下载工具（找修改器）</a>
+                    <a href="https://link3.cc/jingzhegame">惊蛰资源库
+复古怀旧游戏｜中文汉化合集
+fc｜sfc｜gba｜nds｜3ds
+psp｜switch｜pc
+游戏资源 无捆绑无广告✨
+持续更新，免费分享～
+有问题，可在下方邮箱留言✨</a>
                 </ul>
             </div>
             <div class="category-card">
