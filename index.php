@@ -619,6 +619,12 @@ psp｜switch｜pc
                 </ul>
             </div>
             <div class="category-card">
+                <h3>游戏社区</h3>
+                <ol>
+                    <li><a href="https://www.xiaoheihe.cn/app/bbs/home">小黑盒</a></li>
+                </ol>
+            </div>
+            <div class="category-card">
                 <h3>gal专区</h3>
                 <a href="galgame专区/index.html">主页</a>
             </div>
