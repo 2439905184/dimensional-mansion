@@ -457,6 +457,7 @@
                 <li><a href="https://b23.tv/5Y55JZW">【我做了一个可以识别动漫人物的网站，支持3100部动漫+1800galgame！-哔哩哔哩】</a></li>
                 <li><a href="https://b23.tv/aWVGDSH">【【开源AI虚拟伙伴】Web版v4.0发布 高自由度网页二次元2D、3D AI伙伴 枫云AI-哔哩哔哩】</a></li>
                 <li><a href="https://paper2gal.com/">paper2Gal-论文转galgame-好玩的开源项目</a></li>
+                <li><a href="https://reze.studio">reze studio，可以通过webGPU技术在浏览器编辑MMD动画</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
