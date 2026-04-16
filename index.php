@@ -535,7 +535,12 @@
                     <li><a href="https://wwbme.lanzouu.com/i9s8c3j5nooj">青漫</a><span class="tag tag-android">android</span></li>
                 </ul>
             </div>
-            
+            <div class="category-card">
+                <h3>表情包</h3>
+                <ul class="url-list">
+                    <li><a href="https://pan.quark.cn/s/3abd63dc3af8">Eden诗音表情包中文版本的和无字版本的【表情包】分享.zip</a> <!--<a href="https://wwbme.lanzouu.com/i9bOW3nditob">备用链接</a>--></li>
+                </ul>
+            </div>
             <div class="category-card">
                 <h3>游戏</h3>
                 <!-- todo加个分页，做到新网页里面 -->
@@ -582,18 +587,17 @@
                     <li><a href="http://illuvio.ysepan.com/">太白共影的资源导航站</a></li>
                     <li><a target="_blank" href="http://www.hiwifi.com/">极手游</a></li>
                     <!-- 下面这些是游戏资源网站 待补充链接 -->
-                    <a href="">speedrush</a>
                     <a href="">ModNest</a>
                     <a href="">RetroArena</a>
                     <a href="">IndieHive</a>
                     <a href="">CrossPlay</a>
                     <a href="">UltraHD</a>
                     <a href="">LiteGames</a>
-                    <a href="">3DM</a>
+                    <a href="https://www.3dmgame.com/">3DM</a>
                     <a href="">GameCube</a>
                     <a href="">QuickPlay</a>
-                    <a href="">游侠网</a>
-                    <a href="">游民星空</a>
+                    <a href="https://www.ali213.net/">游侠网</a>
+                    <a href="https://www.gamersky.com/">游民星空</a>
                     <a href="">HDRZone</a>
                     <a href="">RPGVault</a>
                     <a href="">Multiplayer</a>
