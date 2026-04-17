@@ -474,7 +474,9 @@
             <!-- 小说 -->
             <ol class="news-list"></ol>
             <!-- 动画 -->
-            <ol class="news-list"></ol>
+            <ol class="news-list">
+                <li><a href="https://bgm.tv/group/topic/456513" target="_blank" rel="noopener noreferrer">AniBt 新的新番字幕组与订阅发布平台</a></li>
+            </ol>
             <!-- 业界 -->
             <ol class="news-list">
                 <li>DWANGO基本不开发opentoonz了，那位shun-iwasawa已经离职很久了我记得。消息来源：粉丝群粉丝Abel,他在discord上面听说的，然后一些老的issue上看到的</li>
