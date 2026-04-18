@@ -519,7 +519,12 @@
                     <li><a href="https://mifun.tv/">MiFun</a><span class="tag tag-android">android</span></li>
                 </ul>
             </div>
-            
+            <div class="category-card">
+                <h3>实用工具</h3>
+                <ul class="url-list">
+                    <li><a href="https://trace.moe/">trace.moe-AI截图找动漫</a></li>
+                </ul>
+            </div>
             <div class="category-card">
                 <h3>漫画/图片</h3>
                 <ul class="url-list">
