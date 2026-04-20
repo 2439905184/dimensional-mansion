@@ -458,6 +458,7 @@
                 <li><a href="https://b23.tv/aWVGDSH">【【开源AI虚拟伙伴】Web版v4.0发布 高自由度网页二次元2D、3D AI伙伴 枫云AI-哔哩哔哩】</a></li>
                 <li><a href="https://paper2gal.com/">paper2Gal-论文转galgame-好玩的开源项目</a></li>
                 <li><a href="https://reze.studio">reze studio，可以通过webGPU技术在浏览器编辑MMD动画</a></li>
+                <li><a href="https://lainos.org/">LainOS是一个开源项目，旨在通过弥合“外星优雅”与“人类易用性”之间的鸿沟，彻底革新用户体验，从而打造出既符合用户需求又美观大方的全新独特界面。概念文档即将发布。</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
