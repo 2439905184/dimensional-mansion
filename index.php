@@ -461,6 +461,7 @@
                 <li><a href="https://lainos.org/">LainOS是一个开源项目，旨在通过弥合“外星优雅”与“人类易用性”之间的鸿沟，彻底革新用户体验，从而打造出既符合用户需求又美观大方的全新独特界面。概念文档即将发布。</a></li>
                 <li><a href="https://gto.hs2049.cn/">无界一键汉化工具</a></li>
                 <li><a href="https://codeberg.org/2439905184/steal-pianoX">stealPianoX</a></li>
+                <li><a href="http://hs2049.cn/">怀沙的工具箱-让游戏更好玩</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
