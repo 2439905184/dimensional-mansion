@@ -630,6 +630,7 @@ psp｜switch｜pc
 游戏资源 无捆绑无广告✨
 持续更新，免费分享～
 有问题，可在下方邮箱留言✨</a>
+                    <a href="https://www.yxdown.com/">游讯网</a>
                 </ul>
             </div>
             <div class="category-card">
