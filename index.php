@@ -544,6 +544,7 @@
                     <li><a href="https://www.kanman.com/">看漫画</a><span class="tag tag-web">网页</span></li>
                     <li><a href="http://kotatsu.app/">kotatus</a><span class="tag tag-web">网页</span></li>
                     <li><a href="https://wwbme.lanzouu.com/i9s8c3j5nooj">青漫</a><span class="tag tag-android">android</span></li>
+                    <li><a href="https://bobopic.com/">https://bobopic.com/</a></li>
                 </ul>
             </div>
             <div class="category-card">
@@ -631,6 +632,7 @@ psp｜switch｜pc
 持续更新，免费分享～
 有问题，可在下方邮箱留言✨</a>
                     <a href="https://www.yxdown.com/">游讯网</a>
+                    <a href="https://mikugame.icu/">mikugame.icu</a>
                 </ul>
             </div>
             <div class="category-card">
