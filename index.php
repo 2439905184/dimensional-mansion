@@ -462,6 +462,7 @@
                 <li><a href="https://gto.hs2049.cn/">无界一键汉化工具</a></li>
                 <li><a href="https://codeberg.org/2439905184/steal-pianoX">stealPianoX</a></li>
                 <li><a href="http://hs2049.cn/">怀沙的工具箱-让游戏更好玩</a></li>
+                <li><a href="https://b23.tv/uSAZnfL">【跨平台FAVORITE引擎(rfvp)能浏览器中游戏！-哔哩哔哩】</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
