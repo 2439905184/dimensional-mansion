@@ -463,6 +463,8 @@
                 <li><a href="https://codeberg.org/2439905184/steal-pianoX">stealPianoX</a></li>
                 <li><a href="http://hs2049.cn/">怀沙的工具箱-让游戏更好玩</a></li>
                 <li><a href="https://b23.tv/uSAZnfL">【跨平台FAVORITE引擎(rfvp)能浏览器中游戏！-哔哩哔哩】</a></li>
+                <li><a href="https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/main/README.CN.md">Open-LLM-VTuber</a>-Open-LLM-VTuber 是一款独特的语音交互 AI 伴侣，它不仅支持实时语音对话和视觉感知，还配备了生动的 Live2D 形象。所有功能都可以在你的电脑上完全离线运行！
+你可以把它当作你的专属 AI 伴侣 —— 无论你想要一个虚拟女友、男友、萌宠还是其他角色，它都能满足你的期待。项目完美支持 Windows、macOS 和 Linux 系统，并提供两种使用方式：网页版和桌面客户端（特别支持透明背景的桌宠模式，让 AI 伴侣在屏幕上的任意位置时刻陪伴着你）。</li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
