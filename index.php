@@ -481,6 +481,7 @@
                 <li><a href="news.php?title=视觉小说数据库VNDB创始人离世了&content=<?php echo urlencode('<img src="img/vndb_ceator_news.jpg" alt="Yorhel has passed away. He was known for running vndb, a website he created in 2007. The moderation team is working to preserve the website but cannot provide details at the moment.">'); ?>">
                 视觉小说数据库VNDB创始人离世了</a></li>
                 <li><a href="https://www.bilibili.com/opus/1182794849037844485">截止到2026-3-23 noesis诉说谎言的记忆的作者（C大）官网已经删除网站内容</a></li>
+                <li><a href="https://game.kasuie.cc/">ACG浓度测试</a></li>
             </ol>
             <!-- 小说 -->
             <ol class="news-list"></ol>
@@ -510,6 +511,7 @@
                 <li><a href="https://www.wjshub.cn/">悟界ShareHub</a> - 游戏 软件 资源 影视</li>
                 <li><a href="https://dmhy.gate.flag.moe/">动漫花园</a><span class="tag tag-web">推荐</span></li>
                 <li><a href="https://dmhy.myheartsite.com/">动漫花园镜像站</a><span class="tag tag-web">推荐</span></li>
+                <li><a href="下载区/动漫头像.html">动漫头像下载</a></li>
             </ol>
         </div>
         
