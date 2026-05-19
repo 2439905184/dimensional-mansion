@@ -470,6 +470,7 @@
                 <li><a href="新闻/软件/mmdagent.txt">mmd-agent项目研究的目的与介绍</a></li>
                 <li><a href="https://suika3.vn/zh-Hans/">suika3-视觉小说引擎中文文档发布</a></li>
                 <li><a href="https://nieta.art/">捏Ta-app-捏人app</a></li>
+                <li><a href="https://www.piupiuchan.top/">piupiu酱-ai聊天APP</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
