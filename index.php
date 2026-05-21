@@ -471,6 +471,7 @@
                 <li><a href="https://suika3.vn/zh-Hans/">suika3-视觉小说引擎中文文档发布</a></li>
                 <li><a href="https://nieta.art/">捏Ta-app-捏人app</a></li>
                 <li><a href="https://www.piupiuchan.top/">piupiu酱-ai聊天APP</a></li>
+                <li><a href="https://b23.tv/9uV3DW4">【尝试复刻 MMD 软件-哔哩哔哩】</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
