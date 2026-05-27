@@ -657,6 +657,30 @@ psp｜switch｜pc
                 </ol>
             </div>
             <div class="category-card">
+                <h3>bangumi专区</h3>
+                <h3>bangumi备用域名，上不去要tizi</h3>
+                <pre>官方域名
+可以用来访问Bangumi番组计划的官方域名及IP地址：
+
+
+友情提醒：因为网站服务器的地址在国外，所以用国内浏览器有可能会进不去网站，建议使用国外浏览器登陆Bangumi。
+
+
+http://bangumi.tv/
+
+
+http://bgm.tv/
+
+
+http://chii.in/
+
+
+http://li350-137.members.linode.com
+
+
+http://178.79.181.137</pre>
+            </div>
+            <div class="category-card">
                 <h3>gal专区</h3>
                 <a href="galgame专区/index.html">主页</a>
             </div>
