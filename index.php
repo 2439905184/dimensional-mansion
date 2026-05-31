@@ -473,6 +473,7 @@
                 <li><a href="https://www.piupiuchan.top/">piupiu酱-ai聊天APP</a></li>
                 <li><a href="https://b23.tv/9uV3DW4">【尝试复刻 MMD 软件-哔哩哔哩】</a></li>
                 <li><a href="https://chii.in/group/topic/462213">bangumi保管库</a></li>
+                <li><a href="https://bgm.tv/group/topic/462456">[开源] Mirrox一个使用 Rust 编写的高性能配置灵活的反向代理——bgm反代镜像： bangumi.one</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
