@@ -519,6 +519,7 @@
                 <li><a href="https://www.wjshub.cn/">悟界ShareHub</a> - 游戏 软件 资源 影视</li>
                 <li><a href="https://dmhy.gate.flag.moe/">动漫花园</a><span class="tag tag-web">推荐</span></li>
                 <li><a href="https://dmhy.myheartsite.com/">动漫花园镜像站</a><span class="tag tag-web">推荐</span></li>
+                <li><a href="https://mikanani.me/">蜜柑计划</a></li>
                 <!-- <li><a href="下载区/动漫头像.html">动漫头像下载</a></li> -->
                 <li><a href="下载区/index.html">下载区</a></li>
             </ol>
