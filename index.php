@@ -474,6 +474,7 @@
                 <li><a href="https://b23.tv/9uV3DW4">【尝试复刻 MMD 软件-哔哩哔哩】</a></li>
                 <li><a href="https://chii.in/group/topic/462213">bangumi保管库</a></li>
                 <li><a href="https://bgm.tv/group/topic/462456">[开源] Mirrox一个使用 Rust 编写的高性能配置灵活的反向代理——bgm反代镜像： bangumi.one</a></li>
+                <li><a href="https://bangumi.one/group/topic/462532">AnimeGo 网站全栈动漫追番、发现与本地播放平台。 仍然在不断开发中</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
