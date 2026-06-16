@@ -475,6 +475,7 @@
                 <li><a href="https://chii.in/group/topic/462213">bangumi保管库</a></li>
                 <li><a href="https://bgm.tv/group/topic/462456">[开源] Mirrox一个使用 Rust 编写的高性能配置灵活的反向代理——bgm反代镜像： bangumi.one</a></li>
                 <li><a href="https://bangumi.one/group/topic/462532">AnimeGo 网站全栈动漫追番、发现与本地播放平台。 仍然在不断开发中</a></li>
+                <li><a href="https://github.com/NNNullptr/MoeKernel_Desktop">制作了一个在网页还原winxp桌面的博客项目，基本还原了winxp的桌面组件，也预留了后期可以添加其他组件的接口，为了视觉美观，添加了右侧栏的贴纸，可以还原一些webcore风格作品，因为篇幅有限，所以配置教程在下一个视频，项目已开源到github</a></li>
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
