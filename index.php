@@ -566,6 +566,7 @@
                     <li><a href="http://kotatsu.app/">kotatus</a><span class="tag tag-web">网页</span></li>
                     <li><a href="https://wwbme.lanzouu.com/i9s8c3j5nooj">青漫</a><span class="tag tag-android">android</span></li>
                     <li><a href="https://bobopic.com/">https://bobopic.com/</a></li>
+                    <li><a href="https://www.dbmoe.com/">萌漫社</a></li>
                 </ul>
             </div>
             <div class="category-card">
