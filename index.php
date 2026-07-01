@@ -491,6 +491,7 @@
                 <li><a href="https://game.kasuie.cc/">ACG浓度测试</a></li>
                 <li><a href="http://galgametest.download/">链接 萌新的你，最适合哪款 Galgame？</a></li>
                 <li><a href="https://b23.tv/EaPvADw">【为了“最后的体面”，年轻人开始求购二次元骨灰盒-哔哩哔哩】</a></li>
+                <li><a href="https://yizhengjia558-lab.github.io/bangdream-museum-new/">BangDream数字档案馆</a></li>
             </ol>
             <!-- 小说 -->
             <ol class="news-list"></ol>
