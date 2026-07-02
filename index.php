@@ -686,7 +686,10 @@ http://chii.in/
 http://li350-137.members.linode.com
 
 
-http://178.79.181.137</pre>
+http://178.79.181.137
+
+https://bangumi.lol
+</pre>
             </div>
             <div class="category-card">
                 <h3>gal专区</h3>
