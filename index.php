@@ -735,6 +735,13 @@ https://bangumi.lol
                     <li><a href="https://www.dzmm.io/sign-in">大只魅魔-AI聊天</a> <a href="https://dzmm.github.io/dzmm-addr/">网址发布页</a></li>
                 </ul>
             </div>
+            <div class="category-card">
+                <h3>coser专区</h3>
+                <ul class="url-list">
+                    <li><a href="http://ciyuandao.com/photo/list/?key=cos">次元岛</a></li>
+                    <li><a href="https://cosz.com">cosz</a></li>
+                </ul>
+            </div>
         </div>
         
         <div class="software-section">
@@ -799,6 +806,9 @@ https://bangumi.lol
                 </div>
                 <div class="link-item">
                     <a href="https://www.nuomill.com/">糯米洛洛</a>
+                </div>
+                <div class="link-item">
+                    <a href="https://ecy.cn">E站 二次元宇宙 ACGN二次元爱好者社区</a>
                 </div>
             </div>
         </div>
