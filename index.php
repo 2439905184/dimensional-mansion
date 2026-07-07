@@ -742,6 +742,12 @@ https://bangumi.lol
                     <li><a href="https://cosz.com">cosz</a></li>
                 </ul>
             </div>
+            <div class="category-card">
+                <h3>次元百科</h3>
+                <ul class="url-list">
+                    <li><a href="次元百科/乳袋.txt">乳袋-百科</a></li>
+                </ul>
+            </div>
         </div>
         
         <div class="software-section">
