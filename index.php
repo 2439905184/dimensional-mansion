@@ -772,6 +772,8 @@ https://bangumi.lol
             <ol class="software-list">
                <li><a href="https://pan.quark.cn/s/40cf114846a6">超级可莉</a> 本质就是猫里奥的改版 <!--<a href="">蓝奏云</a>--></li>
                <li><a href="https://pan.quark.cn/s/06d11a8ecce8">因为是清明节，所以鬼很萌</a></li>
+               <li><a href="https://forum.weightgaming.com/">体重变化游戏</a></li>
+               <li><a href="https://flashpointarchive.org/">flash游戏存档</a></li>
             </ol>
         </div>
         
