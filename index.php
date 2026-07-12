@@ -761,6 +761,7 @@ https://bangumi.lol
                 <!-- <li><a href="https://wwzs.lanzouu.com/iG9ZS32ycr4d">开心动漫</a></li> -->
                 <li><a href="https://github.com/vscodev/neokikoeru">nekikoeru-基于云存储的DLsite音声作品管理和媒体播放软件，使用Go和Vue3开发</a></li>
                 <li><a href="https://mihon.app/">mihon</a><span class="tag tag-comic">漫画</span></li>
+                <li><a href="https://pan.baidu.com/s/1mj2htR6mnv6vsrOPYKbSHw">夏娜桌宠 提取码: kq6r</a></li>
             </ol>
         </div>
         <div class="software-section">
