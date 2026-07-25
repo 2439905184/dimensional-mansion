@@ -477,6 +477,20 @@
                 <li><a href="https://bangumi.one/group/topic/462532">AnimeGo 网站全栈动漫追番、发现与本地播放平台。 仍然在不断开发中</a></li>
                 <li><a href="https://github.com/NNNullptr/MoeKernel_Desktop">制作了一个在网页还原winxp桌面的博客项目，基本还原了winxp的桌面组件，也预留了后期可以添加其他组件的接口，为了视觉美观，添加了右侧栏的贴纸，可以还原一些webcore风格作品，因为篇幅有限，所以配置教程在下一个视频，项目已开源到github</a></li>
                 <li><a href="https://b23.tv/ftOPmKz">【移动端vndb客户端震撼发布-哔哩哔哩】</a></li>
+                <li><a href="https://b23.tv/tAP8PcW">nanoem MMD中文汉化版发布</a></li>
+                <!-- 【开源免费！nanoem MMD(MikuMikuDance)中文汉化版发布，MMD的开源平替，支持Mac/Win。-哔哩哔哩】 
+https://b23.tv/tAP8PcW https://b23.tv/tAP8PcW 
+
+
+花了几天时间汉化了nanoem，一款开源的MMD软件，可以编辑播放 VMD/PMX/PMD ，渲染MMD视频。支持MAC和WIN。
+
+
+代码已开源
+https://github.com/BesingBG/nanoem-cn
+
+
+安装包地址：
+https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
             </ol>
             <!-- cosplay -->
             <ol class="news-list">
