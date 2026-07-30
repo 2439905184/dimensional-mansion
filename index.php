@@ -508,6 +508,7 @@ https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
                 <li><a href="https://b23.tv/EaPvADw">【为了“最后的体面”，年轻人开始求购二次元骨灰盒-哔哩哔哩】</a></li>
                 <li><a href="https://yizhengjia558-lab.github.io/bangdream-museum-new/">BangDream数字档案馆</a></li>
                 <li><a href="https://b23.tv/CUb2eek">【关于我复活了一款游戏这件事......-哔哩哔哩】</a>零境交错测试服交流群：1090305285</li>
+                <li><a href="https://yume.ly">sai站长的梦境交流网站</a></li>
             </ol>
             <!-- 小说 -->
             <ol class="news-list"></ol>
