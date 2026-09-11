@@ -523,7 +523,20 @@ https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
                 <li>TapTap游戏进入量产时代个人开发者可日赚5000元日-消息来源-网友：androids7</li>
             </ol>
         </div>
-        
+        <div class="section">
+            <h2>宅舞的本质思考与理解</h2>
+            <p>宅舞文化来源于日本，本意为试着跳舞。</p>
+            <p>自发性宅舞是基于内心的一种情绪动作舞蹈。</p>
+            <p>专业性宅舞是一种具有编排性的动作。</p>
+            <h2>随手拍的本质</h2>
+            <p>试着拍世界的美</p>
+            <h2>我的艺术疗法</h2>
+            <ol>
+                <li>自发作曲</li>
+                <li>自发作画</li>
+                <li>自发跳舞</li>
+            </ol>
+        </div>
         <div class="section">
             <h2>资源下载</h2>
             <ol class="download-list">
