@@ -608,6 +608,10 @@ https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
                 </ul>
             </div>
             <div class="category-card">
+                <h3>休闲益智好游戏推荐</h3>
+                <p>智力发电机-java me平台</p>
+            </div>
+            <div class="category-card">
                 <h3>游戏</h3>
                 <!-- todo加个分页，做到新网页里面 -->
                 <ul class="url-list">
