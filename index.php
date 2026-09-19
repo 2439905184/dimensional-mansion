@@ -513,6 +513,7 @@ https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
                 <li><a href="https://yizhengjia558-lab.github.io/bangdream-museum-new/">BangDream数字档案馆</a></li>
                 <li><a href="https://b23.tv/CUb2eek">【关于我复活了一款游戏这件事......-哔哩哔哩】</a>零境交错测试服交流群：1090305285</li>
                 <li><a href="https://yume.ly">sai站长的梦境交流网站</a></li>
+                <li><a href="https://www.msn.cn/zh-cn/entertainment/%E9%80%9A%E7%94%A8/love-live-%CE%BC-s-%E7%9A%84%E5%8D%97%E5%B0%8F%E9%B8%9F-%E4%BB%A5-32-%E5%B2%81%E7%9A%84%E6%A8%A1%E6%A0%B7%E5%9B%9E%E6%9D%A5%E4%BA%86/ar-AA2cwg67?ocid=msedgntp&cvid=6aae2fdc7ef84e689dba75b39ff0273f&ei=10">《Love Live!》μ's 的南小鸟，以 32 岁的模样回来了!</a></li>
             </ol>
             <!-- 小说 -->
             <ol class="news-list"></ol>
