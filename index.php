@@ -399,6 +399,10 @@
     </style>
 </head>
 <body>
+    <!-- 网站应该收录二次元新闻和资源导航 -->
+    <!-- 至于二次元百科和二次元作品信息功能直接外链接到bangumi.tv和萌娘百科 -->
+    <!-- 这个网站不做论坛功能 -->
+    <!-- 论坛功能用bangumi.tv替代 -->
     <h2>休闲益智游戏目录</h2>
     <ol>
         <li>十滴水</li>
@@ -441,6 +445,7 @@
         <a target="_blank" href="https://www.bilibili.com/"><img src="img/ico/bilibili.ico" alt="bilibili">bilibili</a>
         <a target="_blank" href="https://www.mfuns.net/"><img src="img/ico/mfuns.ico" alt="mfuns">mfuns</a>
         <a target="_blank" href="https://bangumi.tv/"><img src="img/ico/bangumi.ico" alt="bangumi">bangumi</a>
+        <a href="https://fankuhub.com/">番库-bangumi.tv替代网站</a>
     </div>
     
     <div class="container">
@@ -865,7 +870,10 @@ https://bangumi.lol
     
     <footer>
         <p>投稿请使用邮箱，投递到2439905184@qq.com</p>
-        <button onclick="jump('lifan')" style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--primary-color); color: white; border: none; border-radius: 5px; cursor: pointer;">里番</button>
+        <!-- <button onclick="jump('lifan')" style="margin-top: 1rem; padding: 0.5rem 1rem; background-color: var(--primary-color); color: white; border: none; border-radius: 5px; cursor: pointer;">里番</button> -->
+        <h6>友情链接</h6>
+        <a href="https://bangumi.tv">bangumi.tv</a>
+        <a href="https://moegirl.icu/Mainpage">萌娘百科</a>
     </footer>
     
     <script>
