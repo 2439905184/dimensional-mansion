@@ -488,6 +488,7 @@
                 <li><a href="https://github.com/NNNullptr/MoeKernel_Desktop">制作了一个在网页还原winxp桌面的博客项目，基本还原了winxp的桌面组件，也预留了后期可以添加其他组件的接口，为了视觉美观，添加了右侧栏的贴纸，可以还原一些webcore风格作品，因为篇幅有限，所以配置教程在下一个视频，项目已开源到github</a></li>
                 <li><a href="https://b23.tv/ftOPmKz">【移动端vndb客户端震撼发布-哔哩哔哩】</a></li>
                 <li><a href="https://b23.tv/tAP8PcW">nanoem MMD中文汉化版发布</a></li>
+                <li><a href="https://b23.tv/ZHtU6WB">【【Art3m1s】Artemis引擎开源第三方跨平台实现 首个发布版发布-哔哩哔哩】</a></li>
                 <!-- 【开源免费！nanoem MMD(MikuMikuDance)中文汉化版发布，MMD的开源平替，支持Mac/Win。-哔哩哔哩】 
 https://b23.tv/tAP8PcW https://b23.tv/tAP8PcW 
 
@@ -533,7 +534,20 @@ https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
                 <li>TapTap游戏进入量产时代个人开发者可日赚5000元日-消息来源-网友：androids7</li>
             </ol>
         </div>
-        
+        <div class="section">
+            <h2>宅舞的本质思考与理解</h2>
+            <p>宅舞文化来源于日本，本意为试着跳舞。</p>
+            <p>自发性宅舞是基于内心的一种情绪动作舞蹈。</p>
+            <p>专业性宅舞是一种具有编排性的动作。</p>
+            <h2>随手拍的本质</h2>
+            <p>试着拍世界的美</p>
+            <h2>我的艺术疗法</h2>
+            <ol>
+                <li>自发作曲</li>
+                <li>自发作画</li>
+                <li>自发跳舞</li>
+            </ol>
+        </div>
         <div class="section">
             <h2>资源下载</h2>
             <ol class="download-list">
@@ -603,6 +617,10 @@ https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1 -->
                 <ul class="url-list">
                     <li><a href="https://pan.quark.cn/s/3abd63dc3af8">Eden诗音表情包中文版本的和无字版本的【表情包】分享.zip</a> <!--<a href="https://wwbme.lanzouu.com/i9bOW3nditob">备用链接</a>--></li>
                 </ul>
+            </div>
+            <div class="category-card">
+                <h3>休闲益智好游戏推荐</h3>
+                <p>智力发电机-java me平台</p>
             </div>
             <div class="category-card">
                 <h3>游戏</h3>
