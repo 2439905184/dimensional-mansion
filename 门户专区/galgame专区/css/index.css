@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #1e90ff; /* 主色调 - 青蓝色 */
+    --accent-color: #ff9900; /* 强调色 - 橙色 */
+    /* -bg-color: #0f0f0f; 深色背景 */
+    --text-color: var(--primary-color); /* 白色文字 */
+    --link-color: var(--primary-color); /* 链接颜色 */
+    --hover-color: #2e7dff; /* 悬停颜色 */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--bg-color); */
+    background: url('../images/bg.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+ol li {
+    margin: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+ol li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
+    padding-right: 1.5rem;
+}
+
+ol li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section:last-child {
+    margin-bottom: 1rem;
+}
+
+.section p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    ol li a {
+        font-size: 0.95rem;
+    }
+}
