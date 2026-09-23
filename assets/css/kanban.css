@@ -1,4 +1,12 @@
 .kanban{
     position: absolute;
     bottom: 0;
+    right: 0;
+}
+
+.kanban-bar
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }

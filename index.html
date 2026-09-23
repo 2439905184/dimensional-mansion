@@ -37,8 +37,7 @@
     <!-- 论坛功能用bangumi.tv替代 -->
     <header>
             <h1>次元宅 - 二次元资源导航网</h1>
-                <!-- 删除 不做了 -->
-                <!-- <a href="论坛部分/index.html">次元宅官方论坛</a> -->
+            <a href="contact.html">联系站长</a>
     </header>
     </div>
     <div class="quick-links">
@@ -48,11 +47,11 @@
         <a target="_blank" href="https://bangumi.tv/"><img src="assets/images/ico/bangumi.ico" alt="bangumi">bangumi</a>
         <a target="_blank" href="https://fankuhub.com/">番库</a>
     </div>
-    <a href="contact.html">联系站长</a>
+    
     <nav class="top-nav">
         <h1 class="top-nav-title">新闻与资源专区</h1>
         <a href="">次元新闻</a>
-        <a href="">动画资源</a>
+        <button onclick="changeContent('anime')">动画资源</button>
         <a href="">漫画资源</a>
         <a href="">游戏资源</a>
         <a href="">小说资源</a>
@@ -65,15 +64,21 @@
         <a href="门户专区/野生技术宅区/index.html">野生技术宅专区</a>
         <a href="门户专区/野生创作者区/index.html">野生创作者专区</a>
     </nav>
+    <div id="content">
+
+    </div>
     <div class="kanban">
-        <img src="assets/images/kanban/kanban.jpg" alt="" width="50%">
-        <button>X</button>
+        <img id="congyu" src="assets/images/kanban/kanban.jpg" alt="" width="50%">
         <audio id="kanban-voice" src="assets/audio/kanban-voice2.mp3"></audio>
+    </div>
+    <div class="kanban-bar">
+        <button onclick="toggleKanban()">召唤看板娘</button>
     </div>
     <footer>
         <span><small>相关链接</small></span>
         <a href="https://freelancerdh.free.nf/%E6%8A%80%E6%9C%AF%E5%AE%85%E5%B0%8F%E7%AB%99/index.html">技术宅小站</a>
     </footer>
     <script src="assets/js/kanban.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
