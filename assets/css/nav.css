@@ -12,7 +12,7 @@
     color: white;
 }
 
-.top-nav a {
+.top-nav > a, .top-nav > button {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -21,7 +21,7 @@
     transition: all 0.3s ease;
 }
 
-.top-nav a:hover {
+.top-nav a:hover, .top-nav > button {
     background: rgba(255,255,255,0.3);
     transform: translateY(-2px);
 }
