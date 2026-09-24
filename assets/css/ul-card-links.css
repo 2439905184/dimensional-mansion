@@ -1,0 +1,24 @@
+.nav-grid
+{
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 5px;
+}
+.nav-grid > .card
+{
+    background-color: antiquewhite;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+.nav-grid > .card:hover
+{
+    background-color: #E8C99B;
+}
+.nav-grid > li > a
+{
+    color: black;
+    text-decoration: none
+}

@@ -1,0 +1,11 @@
+/* 网格资源链接界面样式，每个行只有四个块 */
+.category-card 
+{
+    display: flex;
+}
+.url-list > li > a
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+/* 网格资源链接界面样式结束*/
