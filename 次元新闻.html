@@ -1,0 +1,108 @@
+<style>
+.news-list, .download-list {
+    list-style-type: none;
+}
+
+.news-list li, .download-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.news-list li:last-child, .download-list li:last-child {
+    border-bottom: none;
+}
+
+.news-list a, .download-list a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.news-list a:hover, .download-list a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+</style>
+<div class="section">
+    <h2>新闻资讯</h2>
+    <button onclick="changeNewsList('software')">软件新闻</button>
+    <button onclick="changeNewsList('cosplay')">cosplay</button>
+    <button onclick="changeNewsList('animeZongHe')">动漫综合</button>
+    <button onclick="changeNewsList('novel')">小说</button>
+    <button onclick="changeNewsList('anime')">动画</button>
+    <button onclick="changeNewsList('yejie')">业界</button>
+    <!-- 软件新闻 -->
+    <ol class="news-list">
+        <li><a href="https://b23.tv/bXEZHGN">【UTAlet教程】手机上也能使用UTAU音源的软件【基本篇】-哔哩哔哩</a></li>
+        <li><a href="https://b23.tv/43IkSCh">【熟肉】【COEIROINK】免费的AI音声合成软件-哔哩哔哩</a></li>
+        <li><a href="https://bangumi.tv/group/topic/430934">开源开放的番剧推荐计划 - 友声 Anime Episode Recommender</a></li>
+        <li><a href="https://www.bilibili.com/video/BV118egzGEvj/?spm_id_from=333.337.search-card.all.click&vd_source=2f740c00cfe14d9860c2829322f9898f">reinaManager-视觉小说管理器</a></li>
+        <li><a href="https://b23.tv/5Y55JZW">【我做了一个可以识别动漫人物的网站，支持3100部动漫+1800galgame！-哔哩哔哩】</a></li>
+        <li><a href="https://b23.tv/aWVGDSH">【【开源AI虚拟伙伴】Web版v4.0发布 高自由度网页二次元2D、3D AI伙伴 枫云AI-哔哩哔哩】</a></li>
+        <li><a href="https://paper2gal.com/">paper2Gal-论文转galgame-好玩的开源项目</a></li>
+        <li><a href="https://reze.studio">reze studio，可以通过webGPU技术在浏览器编辑MMD动画</a></li>
+        <li><a href="https://lainos.org/">LainOS是一个开源项目，旨在通过弥合“外星优雅”与“人类易用性”之间的鸿沟，彻底革新用户体验，从而打造出既符合用户需求又美观大方的全新独特界面。概念文档即将发布。</a></li>
+        <li><a href="https://gto.hs2049.cn/">无界一键汉化工具</a></li>
+        <li><a href="https://codeberg.org/2439905184/steal-pianoX">stealPianoX</a></li>
+        <li><a href="http://hs2049.cn/">怀沙的工具箱-让游戏更好玩</a></li>
+        <li><a href="https://b23.tv/uSAZnfL">【跨平台FAVORITE引擎(rfvp)能浏览器中游戏！-哔哩哔哩】</a></li>
+        <li><a href="https://github.com/Open-LLM-VTuber/Open-LLM-VTuber/blob/main/README.CN.md">Open-LLM-VTuber</a>-Open-LLM-VTuber 是一款独特的语音交互 AI 伴侣，它不仅支持实时语音对话和视觉感知，还配备了生动的 Live2D 形象。所有功能都可以在你的电脑上完全离线运行！
+你可以把它当作你的专属 AI 伴侣 —— 无论你想要一个虚拟女友、男友、萌宠还是其他角色，它都能满足你的期待。项目完美支持 Windows、macOS 和 Linux 系统，并提供两种使用方式：网页版和桌面客户端（特别支持透明背景的桌宠模式，让 AI 伴侣在屏幕上的任意位置时刻陪伴着你）。</li>
+        <li><a href="https://www.mmdagent.jp/">mmd-agent</a></li>
+        <li><a href="https://github.com/mmdagent-ex/MMDAgent-EX/">mmd-agent-ex</a></li>
+        <li><a href="新闻/软件/mmdagent.txt">mmd-agent项目研究的目的与介绍</a></li>
+        <li><a href="https://suika3.vn/zh-Hans/">suika3-视觉小说引擎中文文档发布</a></li>
+        <li><a href="https://nieta.art/">捏Ta-app-捏人app</a></li>
+        <li><a href="https://www.piupiuchan.top/">piupiu酱-ai聊天APP</a></li>
+        <li><a href="https://b23.tv/9uV3DW4">【尝试复刻 MMD 软件-哔哩哔哩】</a></li>
+        <li><a href="https://chii.in/group/topic/462213">bangumi保管库</a></li>
+        <li><a href="https://bgm.tv/group/topic/462456">[开源] Mirrox一个使用 Rust 编写的高性能配置灵活的反向代理——bgm反代镜像： bangumi.one</a></li>
+        <li><a href="https://bangumi.one/group/topic/462532">AnimeGo 网站全栈动漫追番、发现与本地播放平台。 仍然在不断开发中</a></li>
+        <li><a href="https://github.com/NNNullptr/MoeKernel_Desktop">制作了一个在网页还原winxp桌面的博客项目，基本还原了winxp的桌面组件，也预留了后期可以添加其他组件的接口，为了视觉美观，添加了右侧栏的贴纸，可以还原一些webcore风格作品，因为篇幅有限，所以配置教程在下一个视频，项目已开源到github</a></li>
+        <li><a href="https://b23.tv/ftOPmKz">【移动端vndb客户端震撼发布-哔哩哔哩】</a></li>
+        <li><a href="https://b23.tv/ZHtU6WB">【【Art3m1s】Artemis引擎开源第三方跨平台实现 首个发布版发布-哔哩哔哩】</a></li>
+        <li><a href="https://b23.tv/tAP8PcW">【开源免费！nanoem MMD(MikuMikuDance)中文汉化版发布，MMD的开源平替，支持Mac/Win。-哔哩哔哩】 </a>
+            花了几天时间汉化了nanoem，一款开源的MMD软件，可以编辑播放 VMD/PMX/PMD ，渲染MMD视频。支持MAC和WIN。
+            <a href="https://github.com/BesingBG/nanoem-cn">代码已开源</a>
+            <a href="https://github.com/BesingBG/nanoem-cn/releases/tag/v34.10.0-cn1">安装包地址</a>
+        </li>
+        <li>免费开源动捕软件ThreeDPoseTracker使用介绍
+            下载地址：ThreeDPoseTracker | デジタル・スタンダード公式 (<a  href="digital-standard.com">digital-standard.com</a>)
+            IVCAM 电脑端: iVCam - Use mobile phone as a PC webcam | E2ESOFT
+            IVCAM 手机端
+            请确保手机和电脑处于同一个局域网</li>
+    </ol>
+    <!-- cosplay -->
+    <ol class="news-list">
+        <li><a href="http://ent.cctv.com/20070528/102050_4.shtml">[人型电脑天使心]小叽COS秀</a> </li>
+    </ol>
+    <!-- 动漫综合 -->
+    <ol class="news-list">
+        <li><a href="https://ent.cctv.com/20070531/102221_2.shtml">自制女友国产</a>-工艺：水管（骨架），泡沫塑料（身体），雕刻（塑形）</li>
+        <li><a href="https://b23.tv/3TY3uMf">【把2002年的D3D8游戏搬上Android——东方红魔乡 SDL2/GLES 跨平台移植记录-哔哩哔哩】</a></li>
+        <li><a href="news.php?title=视觉小说数据库VNDB创始人离世了&content=<?php echo urlencode('<img src="img/vndb_ceator_news.jpg" alt="Yorhel has passed away. He was known for running vndb, a website he created in 2007. The moderation team is working to preserve the website but cannot provide details at the moment.">'); ?>">
+        视觉小说数据库VNDB创始人离世了</a></li>
+        <li><a href="https://www.bilibili.com/opus/1182794849037844485">截止到2026-3-23 noesis诉说谎言的记忆的作者（C大）官网已经删除网站内容</a></li>
+        <li><a href="https://game.kasuie.cc/">ACG浓度测试</a></li>
+        <li><a href="http://galgametest.download/">链接 萌新的你，最适合哪款 Galgame？</a></li>
+        <li><a href="https://b23.tv/EaPvADw">【为了“最后的体面”，年轻人开始求购二次元骨灰盒-哔哩哔哩】</a></li>
+        <li><a href="https://yizhengjia558-lab.github.io/bangdream-museum-new/">BangDream数字档案馆</a></li>
+        <li><a href="https://b23.tv/CUb2eek">【关于我复活了一款游戏这件事......-哔哩哔哩】</a>零境交错测试服交流群：1090305285</li>
+        <li><a href="https://yume.ly">sai站长的梦境交流网站</a></li>
+        <li><a href="https://www.msn.cn/zh-cn/entertainment/%E9%80%9A%E7%94%A8/love-live-%CE%BC-s-%E7%9A%84%E5%8D%97%E5%B0%8F%E9%B8%9F-%E4%BB%A5-32-%E5%B2%81%E7%9A%84%E6%A8%A1%E6%A0%B7%E5%9B%9E%E6%9D%A5%E4%BA%86/ar-AA2cwg67?ocid=msedgntp&cvid=6aae2fdc7ef84e689dba75b39ff0273f&ei=10">《Love Live!》μ's 的南小鸟，以 32 岁的模样回来了!</a></li>
+        <li><a href="https://www.msn.cn/zh-cn/news/other/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%BC%82%E8%89%B2%E7%9E%B3%E5%BE%88%E8%90%8C-%E4%BD%86%E8%BF%99%E5%90%8Dvtuber%E7%9A%84%E5%BC%82%E8%89%B2%E7%9E%B3%E5%8D%B4%E6%98%AF%E4%B8%80%E7%93%B6%E5%A5%B6%E8%8C%B6%E4%BA%8B%E6%95%85%E5%AF%BC%E8%87%B4/ar-AA2cQmOc?ocid=msedgntp&cvid=6ab47bf0c37f42b59f5edeb6667aff91&ei=14">二次元异色瞳很萌，但这名VTuber的异色瞳却是一瓶奶茶事故导致</a></li>
+        <li><a href="https://www.msn.cn/zh-cn/entertainment/movies/%E5%9B%A0%E6%B2%A1%E4%B9%B0%E5%88%B0%E5%8A%A8%E6%BC%AB%E7%89%B9%E5%85%B8-%E6%97%A5%E6%9C%AC%E7%B2%89%E4%B8%9D%E6%8A%8A%E5%BD%B1%E9%99%A2%E9%AA%82%E4%BA%8620%E5%88%86%E9%92%9F-%E7%84%B6%E5%90%8E%E8%A2%AB%E8%AD%A6%E5%AF%9F%E5%B8%A6%E8%B5%B0/ar-AA2baryx?ocid=BingHp01&cvid=0b46ae7f201947bba71eebfdc8417ec5&ei=27">因没买到动漫特典!日本粉丝把影院骂了20分钟，然后被警察带走</a></li>
+        <li><a href="https://www.msn.cn/zh-cn/entertainment/%E5%90%8D%E4%BA%BA/%E5%8D%97%E5%B0%8F%E9%B8%9F%E5%9B%9E%E5%BD%92-lovelive-%E6%96%B0%E4%BD%9C-%E8%A1%A8%E6%83%85%E5%9B%BE%E5%8D%B4%E8%A2%AB%E6%8C%87%E6%93%A6%E8%BE%B9-%E6%9C%89%E4%BA%9B%E4%BA%BA%E6%98%AF%E4%B8%8D%E6%98%AF%E5%A4%AA%E6%95%8F%E6%84%9F%E4%BA%86/ar-AA2cMS3v?ocid=msedgntp&cvid=6ab45c81f2b54d87abf4ddf6b855036c&ei=12">南小鸟回归《LoveLive!》新作，表情图却被指擦边，有些人是不是太敏感了</a></li>
+    </ol>
+    <!-- 小说 -->
+    <ol class="news-list"></ol>
+    <!-- 动画 -->
+    <ol class="news-list">
+        <li><a href="https://bgm.tv/group/topic/456513" target="_blank" rel="noopener noreferrer">AniBt 新的新番字幕组与订阅发布平台</a></li>
+    </ol>
+    <!-- 业界 -->
+    <ol class="news-list">
+        <li>DWANGO基本不开发opentoonz了，那位shun-iwasawa已经离职很久了我记得。消息来源：粉丝群粉丝Abel,他在discord上面听说的，然后一些老的issue上看到的</li>
+        <li>TapTap游戏进入量产时代个人开发者可日赚5000元日-消息来源-网友：androids7</li>
+    </ol>
+</div>

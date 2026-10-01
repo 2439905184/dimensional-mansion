@@ -75,6 +75,46 @@ const gameResourceHtml = `
                 <li class="card"><a target="_blank" href="http://www.hiwifi.com/">极手游</a></li>
 `
 const contentDiv = document.getElementById("content")
+function showNewsList(newsList, index)
+{
+    for (var i = 0; i < newsList.length; i++)
+        {
+            if (newsList[i].className != 'news-list software-list')
+            {
+                newsList[i].style.display = 'none';
+            }
+        }
+    newsList[index].style.display = 'block';
+}
+function changeNewsList(typeName)
+    {
+        const newsList = document.getElementsByClassName('news-list');
+        if (typeName == "software")
+        {
+            showNewsList(newsList,0);
+        }
+        else if (typeName == 'cosplay')
+        {
+            
+            showNewsList(newsList,1);
+        }
+        else if (typeName == 'animeZongHe')
+        {
+            showNewsList(newsList,2);
+        }
+        else if (typeName == "novel")
+        {
+            showNewsList(newsList,3);
+        }
+        else if (typeName == "anime")
+        {
+            showNewsList(newsList,4)
+        }
+        else if (typeName == "yejie")
+        {
+            showNewsList(newsList,5)
+        }
+    }
 function changeContent(value)
 {
     if (value == "anime")
@@ -88,5 +128,22 @@ function changeContent(value)
     else if (value == "game")
     {
         contentDiv.innerHTML = gameResourceHtml
+    }
+    else if (value == "news")
+    {
+        const request = new XMLHttpRequest()
+        request.open("GET","/次元新闻.html")
+        request.onload = function ()
+        {
+            if (request.status == 200)
+            {
+                contentDiv.innerHTML = request.responseText
+            }
+            else
+            {
+                alert("请求失败！")
+            }
+        }
+        request.send()
     }
 }

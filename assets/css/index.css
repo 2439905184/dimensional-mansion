@@ -73,29 +73,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.news-list, .download-list {
-    list-style-type: none;
-}
 
-.news-list li, .download-list li {
-    padding: 0.5rem 0;
-    border-bottom: 1px dashed #eee;
-}
-
-.news-list li:last-child, .download-list li:last-child {
-    border-bottom: none;
-}
-
-.news-list a, .download-list a {
-    color: var(--link-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.news-list a:hover, .download-list a:hover {
-    color: var(--link-hover);
-    text-decoration: underline;
-}
 
 .url-navigation h2 {
     text-align: center;
