@@ -1,0 +1,40 @@
+article {
+    /* 行宽：68ch ≈ 34 个中文字，正落在 25–40 的舒适区间 */
+    max-width: 68ch;
+    margin-inline: auto;      /* 水平居中 */
+    padding-inline: 1.5rem;   /* 左右留白，防窄屏贴边 */
+  
+    /* 字体栈：中文优先思源黑体，英文用 Source Sans */
+    font-family:
+      "Noto Sans SC",
+      "Source Sans 3",
+      "PingFang SC",
+      "Microsoft YaHei",
+      system-ui,
+      -apple-system,
+      sans-serif;
+  
+    /* 排版参数 */
+    font-size: 1.0625rem;     /* 17px，屏幕正文舒适区 */
+    line-height: 1.75;        /* 长文底线 1.6，1.75 更透气 */
+    letter-spacing: 0.02em;   /* 中文微调字距，避免过密 */
+    color: #2c3e50;           /* 深灰，比纯黑更耐读 */
+    background: #fff;
+  
+    /* 关键：让源码中的换行与空行生效 */
+    white-space: pre-line;
+    /* 可选：保留多余空格时改用 pre-wrap */
+    /* white-space: pre-wrap; */
+  
+    /* 中英文混排时避免行首标点、优化断行 */
+    overflow-wrap: break-word;
+  }
+  /* ---------- 小屏适配 ---------- */
+  @media (max-width: 600px) {
+    article {
+      font-size: 1rem;        /* 16px */
+      line-height: 1.8;       /* 小屏行距略增，补偿窄行宽 */
+      padding-inline: 1.1rem;
+    }
+  }
+  
