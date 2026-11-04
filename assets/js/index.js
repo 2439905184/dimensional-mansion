@@ -16,6 +16,8 @@ const animeResourceHtml = `
 const comicResourceHtml = `
             <h3>漫画/图片</h3>
             <ul class="nav-grid">
+                <li class="card"><a href="https://haowallpaper.com/?page=3">免费4k壁纸</a><span class="tag tag-android">web</span></li>
+                <li class="card"><a href="https://konachan-next.wjcodes.com/">Konachan-CHS V2 汉化 | 动漫壁纸下载 | Konachan中文站</a><span class="tag tag-android">web</span></li>
                 <li class="card"><a href="https://pica519.com/#home">哔咔下载</a><span class="tag tag-android">android</span></li>
                 <li class="card"><a href="https://mhua5.com/">漫画屋</a><span class="tag tag-web">网页</span></li>
                 <li class="card"><a href="https://www.manhuazhan.com/">漫画站</a><span class="tag tag-web">网页</span></li>
