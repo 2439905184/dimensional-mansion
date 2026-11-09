@@ -133,19 +133,20 @@ function changeContent(value)
     }
     else if (value == "news")
     {
-        const request = new XMLHttpRequest()
-        request.open("GET","/次元新闻.html")
-        request.onload = function ()
-        {
-            if (request.status == 200)
-            {
-                contentDiv.innerHTML = request.responseText
-            }
-            else
-            {
-                alert("请求失败！")
-            }
-        }
-        request.send()
+        window.open("/次元宅/次元新闻.html")
+        // const request = new XMLHttpRequest()
+        // request.open("GET","/次元新闻.html")
+        // request.onload = function ()
+        // {
+        //     if (request.status == 200)
+        //     {
+        //         contentDiv.innerHTML = request.responseText
+        //     }
+        //     else
+        //     {
+        //         alert("请求失败！")
+        //     }
+        // }
+        // request.send()
     }
 }
