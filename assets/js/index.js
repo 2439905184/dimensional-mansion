@@ -75,6 +75,7 @@ const gameResourceHtml = `
                 <li class="card"><a href="https://cartoongames.io/">cartoongames.io-在线玩html5小游戏</a></li>
                 <li class="card"><a href="http://illuvio.ysepan.com/">太白共影的资源导航站</a></li>
                 <li class="card"><a target="_blank" href="http://www.hiwifi.com/">极手游</a></li>
+                <li class="card"><a traget="_blank" href="https://www.jvgme.com/game">java me游戏</a></li>
 `
 const contentDiv = document.getElementById("content")
 function showNewsList(newsList, index)
